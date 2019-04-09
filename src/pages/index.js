@@ -16,7 +16,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={["blog", "gatsby", "javascript", "react"]}
         />
         <Bio />
         {posts.map(({ node }) => {
@@ -28,7 +28,7 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>

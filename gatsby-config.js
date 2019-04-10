@@ -57,13 +57,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby Starter Blog",
-        short_name: "GatsbyJS",
+        name: "Rich Dubay",
+        short_name: "Rich Dubay",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#663399",
-        display: "minimal-ui",
-        icon: "content/assets/gatsby-icon.png",
+        display: "standalone",
+        icon: "content/assets/gray-icon.png", // This path is relative to the root of the site.
       },
     },
     "gatsby-plugin-offline",

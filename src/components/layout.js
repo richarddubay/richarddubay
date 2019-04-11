@@ -1,59 +1,49 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link, StaticQuery } from "gatsby"
+import Image from "gatsby-image"
 import "./layout.css"
 import { rhythm, scale } from "../utils/typography"
+
+// move this to it's own component
+function Header() {
+  return (
+    <StaticQuery
+      query={logoQuery}
+      render={data => {
+        console.log("data = ", data)
+        return (
+          <nav>
+            <Link to="/">
+              <Image
+                fixed={data.image.childImageSharp.fixed}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  minWidth: 50,
+                  borderRadius: "100%",
+                }}
+                imgStyle={{
+                  borderRadius: "50%",
+                }}
+              />
+            </Link>
+          </nav>
+        )
+      }}
+    />
+  )
+}
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: "none",
-              textDecoration: "none",
-              color: "inherit",
-            }}
-            to={"/"}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: "Montserrat, sans-serif",
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: "none",
-              textDecoration: "none",
-              color: "inherit",
-            }}
-            to={"/"}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
     return (
       <div className="layout">
-        <header>{header}</header>
+        <header>
+          <Header />
+        </header>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with{" "}
@@ -63,5 +53,17 @@ class Layout extends React.Component {
     )
   }
 }
+
+const logoQuery = graphql`
+  query LogoQuery {
+    image: file(absolutePath: { regex: "/logo_black.png/" }) {
+      childImageSharp {
+        fixed(width: 50, height: 50) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default Layout

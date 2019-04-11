@@ -9,3 +9,27 @@ html {
   /* max-width: 64vw;*/
   padding: 0;
 }
+
+.siteHeader {
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+}
+
+.siteHeader nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.siteHeader nav ul {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.siteHeader nav ul li {
+  display: inline-block;
+}
+
+.siteHeader nav ul li a {
+  padding: 0 10px;
+  box-shadow: none;
+}

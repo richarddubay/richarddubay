@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import "./layout.css"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 // move this to it's own component
 function Header() {
@@ -10,10 +10,9 @@ function Header() {
     <StaticQuery
       query={logoQuery}
       render={data => {
-        console.log("data = ", data)
         return (
           <nav>
-            <Link to="/">
+            <Link to="/" style={{ boxShadow: "none" }}>
               <Image
                 fixed={data.image.childImageSharp.fixed}
                 style={{
@@ -27,6 +26,17 @@ function Header() {
                 }}
               />
             </Link>
+            <ul>
+              <li>
+                <a href="/">A Link</a>
+              </li>
+              <li>
+                <a href="/">Some Link</a>
+              </li>
+              <li>
+                <a href="/">About</a>
+              </li>
+            </ul>
           </nav>
         )
       }}
@@ -36,12 +46,12 @@ function Header() {
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
 
     return (
       <div className="layout">
-        <header>
+        <header className="siteHeader">
           <Header />
         </header>
         <main>{children}</main>

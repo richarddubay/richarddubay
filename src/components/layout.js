@@ -28,12 +28,6 @@ function Header() {
             </Link>
             <ul>
               <li>
-                <a href="/">A Link</a>
-              </li>
-              <li>
-                <a href="/">Some Link</a>
-              </li>
-              <li>
                 <a href="/">About</a>
               </li>
             </ul>

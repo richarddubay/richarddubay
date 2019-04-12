@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
           return (
             <>
               <div key={node.fields.slug}>
-                <h1>
+                <h1 className="postTitle">
                   <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                     {title}
                   </Link>

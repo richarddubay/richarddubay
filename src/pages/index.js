@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -20,23 +19,23 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.html,
-                }}
-              />
-            </div>
+            <>
+              <div key={node.fields.slug}>
+                <h1>
+                  <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h1>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.html,
+                  }}
+                />
+              </div>
+              <footer>
+                <small>{node.frontmatter.date}</small>
+              </footer>
+            </>
           )
         })}
       </Layout>

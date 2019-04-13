@@ -82,14 +82,6 @@ module.exports = {
             family: "Lora",
             variants: ["400", "700"],
           },
-          {
-            family: "Open Sans",
-            variants: ["400", "700"],
-          },
-          {
-            family: "Roboto",
-            variants: ["400", "700"],
-          },
         ],
       },
     },

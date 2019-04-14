@@ -172,3 +172,22 @@ footer {
 .footer ul li a {
   font-size: inherit;
 }
+
+.pagination ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.pagination ul li:last-child {
+  text-align: right;
+}
+
+.pagination ul li {
+  display: inline-block;
+}
+
+.pagination ul li a {
+  font-size: 1rem;
+}

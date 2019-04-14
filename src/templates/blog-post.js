@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import moment from "moment"
 
 import "./blog-post.css"
 import Layout from "../components/layout"
@@ -10,6 +11,18 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const previousYear = previous
+      ? moment(previous.frontmatter.date).format("YYYY")
+      : null
+    const previousMonth = previous
+      ? moment(previous.frontmatter.date).format("MM")
+      : null
+    const previousDay = previous
+      ? moment(previous.frontmatter.date).format("DD")
+      : null
+    const nextYear = next ? moment(next.frontmatter.date).format("YYYY") : null
+    const nextMonth = next ? moment(next.frontmatter.date).format("MM") : null
+    const nextDay = next ? moment(next.frontmatter.date).format("DD") : null
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -26,14 +39,34 @@ class BlogPostTemplate extends React.Component {
           <ul>
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
+                <Link
+                  to={
+                    previousYear +
+                    "/" +
+                    previousMonth +
+                    "/" +
+                    previousDay +
+                    previous.fields.slug
+                  }
+                  rel="prev"
+                >
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
+                <Link
+                  to={
+                    nextYear +
+                    "/" +
+                    nextMonth +
+                    "/" +
+                    nextDay +
+                    next.fields.slug
+                  }
+                  rel="next"
+                >
                   {next.frontmatter.title} →
                 </Link>
               )}

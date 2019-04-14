@@ -4,6 +4,15 @@ html {
   margin: 0;
 }
 
+ul li a {
+  font-size: 1.25rem;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
 .layout {
   margin: 0 auto;
   padding: 0;
@@ -34,6 +43,7 @@ html {
 .siteHeader nav ul li a {
   padding: 0 10px;
   box-shadow: none;
+  font-size: 1rem;
 }
 
 .main {

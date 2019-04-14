@@ -48,7 +48,7 @@ class Layout extends React.Component {
           <Header />
         </header>
         <main className="main">{children}</main>
-        <footer class="footer">
+        <footer className="footer">
           <p>
             © {new Date().getFullYear()}, Built with{" "}
             <a href="https://www.gatsbyjs.org">Gatsby</a> and ❤️

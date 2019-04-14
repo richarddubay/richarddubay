@@ -1,9 +1,11 @@
+const moment = require("moment")
 const path = require("path")
 const { createFilePath } = require("gatsby-source-filesystem")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
+  const blogList = path.resolve("./src/templates/blog-list.js")
   const blogPost = path.resolve("./src/templates/blog-post.js")
   return graphql(
     `
@@ -18,6 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
                 slug
               }
               frontmatter {
+                date(formatString: "YYYY/MM/DD")
                 title
               }
             }
@@ -38,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/` : `/page/${i + 1}`,
-        component: path.resolve("./src/templates/blog-list.js"),
+        component: blogList,
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
@@ -51,9 +54,12 @@ exports.createPages = ({ graphql, actions }) => {
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
+      const year = moment(post.node.frontmatter.date).format("YYYY")
+      const month = moment(post.node.frontmatter.date).format("MM")
+      const day = moment(post.node.frontmatter.date).format("DD")
 
       createPage({
-        path: post.node.fields.slug,
+        path: year + "/" + month + "/" + day + post.node.fields.slug,
         component: blogPost,
         context: {
           slug: post.node.fields.slug,

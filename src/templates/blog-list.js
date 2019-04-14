@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import moment from "moment"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -25,11 +26,20 @@ class BlogIndex extends React.Component {
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          const year = moment(node.frontmatter.date).format("YYYY")
+          const month = moment(node.frontmatter.date).format("MM")
+          const day = moment(node.frontmatter.date).format("DD")
+          const footerDate = moment(node.frontmatter.date).format(
+            "MMMM DD, YYYY"
+          )
           return (
             <>
               <div key={node.fields.slug}>
                 <h1 className="postTitle">
-                  <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+                  <Link
+                    style={{ boxShadow: "none" }}
+                    to={year + "/" + month + "/" + day + node.fields.slug}
+                  >
                     {title}
                   </Link>
                 </h1>
@@ -40,7 +50,7 @@ class BlogIndex extends React.Component {
                 />
               </div>
               <footer>
-                <small>{node.frontmatter.date}</small>
+                <small>{footerDate}</small>
               </footer>
             </>
           )
@@ -89,7 +99,7 @@ export const blogListQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY/MM/DD")
             title
             description
           }

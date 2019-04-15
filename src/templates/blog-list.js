@@ -11,7 +11,6 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
     const { currentPage, numPages } = this.props.pageContext
-    console.log("currentPage = ", currentPage)
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =

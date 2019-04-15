@@ -57,7 +57,6 @@ exports.createPages = ({ graphql, actions }) => {
       const day = moment(post.node.frontmatter.date).format("DD")
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
-      console.log("next = ", next)
 
       createPage({
         path: year + "/" + month + "/" + day + post.node.fields.slug,

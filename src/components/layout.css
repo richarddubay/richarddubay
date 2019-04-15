@@ -46,6 +46,12 @@ a:hover {
   font-size: 1rem;
 }
 
+/* #___gatsby > div > div > header > nav > a */
+.siteHeader nav a.logo:hover {
+  border: none;
+  text-decoration: none;
+}
+
 .main {
   max-width: 60vw;
   margin: 0 auto;

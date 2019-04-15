@@ -9,7 +9,7 @@ function Header() {
       render={data => {
         return (
           <nav>
-            <Link to="/" style={{ boxShadow: "none" }}>
+            <Link to="/" className="logo">
               <Image fixed={data.image.childImageSharp.fixed} />
             </Link>
             <ul>

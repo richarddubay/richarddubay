@@ -25,10 +25,12 @@ class BlogIndex extends React.Component {
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
-          const year = moment(node.frontmatter.date).format("YYYY")
-          const month = moment(node.frontmatter.date).format("MM")
-          const day = moment(node.frontmatter.date).format("DD")
-          const footerDate = moment(node.frontmatter.date).format(
+          const year = moment(node.frontmatter.date, "YYYY-MM-DD").format(
+            "YYYY"
+          )
+          const month = moment(node.frontmatter.date, "YYYY-MM-DD").format("MM")
+          const day = moment(node.frontmatter.date, "YYYY-MM-DD").format("DD")
+          const footerDate = moment(node.frontmatter.date, "YYYY-MM-DD").format(
             "MMMM DD, YYYY"
           )
           return (

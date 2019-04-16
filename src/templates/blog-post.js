@@ -11,17 +11,23 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const previousYear = previous
-      ? moment(previous.frontmatter.date).format("YYYY")
+      ? moment(previous.frontmatter.date, "YYYY-MM-DD").format("YYYY")
       : null
     const previousMonth = previous
-      ? moment(previous.frontmatter.date).format("MM")
+      ? moment(previous.frontmatter.date, "YYYY-MM-DD").format("MM")
       : null
     const previousDay = previous
-      ? moment(previous.frontmatter.date).format("DD")
+      ? moment(previous.frontmatter.date, "YYYY-MM-DD").format("DD")
       : null
-    const nextYear = next ? moment(next.frontmatter.date).format("YYYY") : null
-    const nextMonth = next ? moment(next.frontmatter.date).format("MM") : null
-    const nextDay = next ? moment(next.frontmatter.date).format("DD") : null
+    const nextYear = next
+      ? moment(next.frontmatter.date, "YYYY-MM-DD").format("YYYY")
+      : null
+    const nextMonth = next
+      ? moment(next.frontmatter.date, "YYYY-MM-DD").format("MM")
+      : null
+    const nextDay = next
+      ? moment(next.frontmatter.date, "YYYY-MM-DD").format("DD")
+      : null
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

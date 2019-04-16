@@ -79,6 +79,10 @@ module.exports = {
       options: {
         fonts: [
           {
+            family: "Bitter",
+            variants: ["400", "700"],
+          },
+          {
             family: "Lora",
             variants: ["400", "700"],
           },

@@ -56,7 +56,7 @@ a:hover {
 .main {
   max-width: 85vw;
   margin: 0 auto;
-  font-family: "Lora", sans-serif;
+  font-family: "Bitter", sans-serif;
   padding-top: 1rem;
 }
 
@@ -107,6 +107,7 @@ a:hover {
   font-size: 1.25rem;
   line-height: 1.75;
   padding: 0.5rem 0 1rem;
+  font-family: "Lora", sans-serif;
 }
 
 .main ul {

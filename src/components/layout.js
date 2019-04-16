@@ -1,5 +1,6 @@
 import React from "react"
 import "./layout.css"
+import Footer from "./footer"
 import Header from "./header"
 
 class Layout extends React.Component {
@@ -13,24 +14,7 @@ class Layout extends React.Component {
         </header>
         <main className="main">{children}</main>
         <footer className="footer">
-          <p>
-            © {new Date().getFullYear()}, Built with{" "}
-            <a href="https://www.gatsbyjs.org">Gatsby</a> and ❤️
-          </p>
-          <ul>
-            <li>
-              <a href="https://twitter.com/richarddubay">Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/richarddubay/">Instagram</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/richarddubay">Facebook</a>
-            </li>
-            <li>
-              <a href="https://github.com/richarddubay">Github</a>
-            </li>
-          </ul>
+          <Footer />
         </footer>
       </div>
     )

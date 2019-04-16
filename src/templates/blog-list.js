@@ -32,8 +32,8 @@ class BlogIndex extends React.Component {
             "MMMM DD, YYYY"
           )
           return (
-            <>
-              <div key={node.fields.slug}>
+            <div key={node.fields.slug}>
+              <div>
                 <h1 className="postTitle">
                   <Link
                     style={{ boxShadow: "none" }}
@@ -51,7 +51,7 @@ class BlogIndex extends React.Component {
               <footer>
                 <small>{footerDate}</small>
               </footer>
-            </>
+            </div>
           )
         })}
         <div className="pagination">

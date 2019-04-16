@@ -40,6 +40,7 @@ class BlogPostTemplate extends React.Component {
               {previous && (
                 <Link
                   to={
+                    "/" +
                     previousYear +
                     "/" +
                     previousMonth +
@@ -57,6 +58,7 @@ class BlogPostTemplate extends React.Component {
               {next && (
                 <Link
                   to={
+                    "/" +
                     nextYear +
                     "/" +
                     nextMonth +

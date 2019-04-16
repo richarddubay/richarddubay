@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
                 <h1 className="postTitle">
                   <Link
                     style={{ boxShadow: "none" }}
-                    to={year + "/" + month + "/" + day + node.fields.slug}
+                    to={"/" + year + "/" + month + "/" + day + node.fields.slug}
                   >
                     {title}
                   </Link>

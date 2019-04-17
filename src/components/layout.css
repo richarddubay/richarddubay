@@ -206,14 +206,20 @@ footer {
   font-size: 1rem;
 }
 
-.aboutImage {
+.about {
   display: grid;
   grid-template-columns: 1fr 75% 1fr;
   padding: 1rem 0;
 }
 
-.aboutImage .gatsby-image-wrapper {
+.about .gatsby-image-wrapper,
+.about em {
   grid-column-start: 2;
+}
+
+.about em {
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 900px) {

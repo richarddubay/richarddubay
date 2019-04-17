@@ -24,25 +24,42 @@ class AboutPage extends React.Component {
                   Michigan Wolverines
                 </a>
                 , <a href="https://www.nhl.com/redwings">Detroit Red Wings</a>,
-                and <a href="https://www.49ers.com/">San Francisco 49ers</a>.
+                and <a href="https://www.49ers.com/">San Francisco 49ers</a>. Oh
+                yeah, my favorite sports teams are <em>very</em> popular here.
+                😂
               </p>
-              <div className="aboutImage">
+              <div className="about">
                 <Image fluid={data.avatar.childImageSharp.fluid} />
               </div>
+              <div className="about">
+                <em>
+                  My beautiful wife and I at the top of the Sky Needle in
+                  Seattle.
+                </em>
+              </div>{" "}
               <h2>What I Do</h2>
               <p>
                 I work in full-time ministry as a web developer for{" "}
                 <a href="https://newspring.cc/">NewSpring Church</a>. It is
                 easily the best job I've ever had. I can't imagine spending my
                 life in pursuit of a greater calling than seeing Jesus change
-                peoples lives and making Him famous through technology. I’m also
-                falling more in love with writing. The more I do it, the more I
-                love it. One story, one paragraph, one sentence, or even one
-                word can change someones life. That’s a great power not to be
-                taken lightly. My biggest outlet for this creative endeavor is
-                on <a href="https://medium.com/@richarddubay">Medium</a>. I hope
-                to expand on that and bring my writing to this site in the near
-                future.
+                peoples lives and making Him famous through technology.
+              </p>
+              <p>
+                I’m also a writer. I am passionate about helping people find
+                their purpose, rediscover their passions, and how to tie these
+                together into what you do. This site is where I get to talk
+                about these things. I also write about God, technology, writing
+                (ironically), and other sundry things.
+              </p>
+              <p>I’ve also started working on a book. 😬</p>
+              <p>
+                I fall more in love with writing all the time. The more I do it,
+                the more I love it. One story, one paragraph, one sentence, or
+                even one word can change someones life. That’s a great power not
+                to be taken lightly. Also, the personal blog has taken a hit
+                recently, but it's do for a comeback. I want to be here when it
+                does.
               </p>
               <h2>How I Do It</h2>
               <p>
@@ -54,13 +71,15 @@ class AboutPage extends React.Component {
                 started using{" "}
                 <a href="https://culturedcode.com/things/">Things</a> to keep
                 everything together and finished as close as possible to
-                on-time. This site is built mainly using{" "}
-                <a href="https://reactjs.org/">React</a> in{" "}
-                <a href="https://atom.io/">Atom</a>. Before that I used{" "}
+                on-time. This site is built with{" "}
+                <a href="https://www.gatsbyjs.org/">Gatsby</a> and edited with{" "}
+                <a href="https://atom.io/">Atom</a>. Before this, my site was
+                straight up <a href="https://reactjs.org/">React</a> and{" "}
+                <em>before that</em> I used{" "}
                 <a href="https://panic.com/coda/">Coda</a> and straight up HTML
                 and CSS (which I still use for a lot of things). The site is
-                powered by <a href="https://www.dreamhost.com/">Dreamhost</a>. I
-                am powered by caffeine. A lot of caffeine.
+                powered by <a href="https://www.netlify.com/">Netlify</a>. I am
+                powered by caffeine. A lot of caffeine.
               </p>
               <h2>Other Things</h2>
               <p>

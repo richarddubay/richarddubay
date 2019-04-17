@@ -26,7 +26,9 @@ class AboutPage extends React.Component {
                 , <a href="https://www.nhl.com/redwings">Detroit Red Wings</a>,
                 and <a href="https://www.49ers.com/">San Francisco 49ers</a>. Oh
                 yeah, my favorite sports teams are <em>very</em> popular here.
-                😂
+                <span role="img" aria-label="joy">
+                  😂
+                </span>
               </p>
               <div className="about">
                 <Image fluid={data.avatar.childImageSharp.fluid} />
@@ -52,7 +54,12 @@ class AboutPage extends React.Component {
                 about these things. I also write about God, technology, writing
                 (ironically), and other sundry things.
               </p>
-              <p>I’ve also started working on a book. 😬</p>
+              <p>
+                I’ve also started working on a book.{" "}
+                <span role="img" aria-label="grimace">
+                  😬
+                </span>
+              </p>
               <p>
                 I fall more in love with writing all the time. The more I do it,
                 the more I love it. One story, one paragraph, one sentence, or

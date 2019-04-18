@@ -25,7 +25,7 @@ class AboutPage extends React.Component {
                 </a>
                 , <a href="https://www.nhl.com/redwings">Detroit Red Wings</a>,
                 and <a href="https://www.49ers.com/">San Francisco 49ers</a>. Oh
-                yeah, my favorite sports teams are <em>very</em> popular here.
+                yeah, my favorite sports teams are <em>very</em> popular here.{" "}
                 <span role="img" aria-label="joy">
                   😂
                 </span>

@@ -83,10 +83,10 @@ class AboutPage extends React.Component {
                 <a href="https://atom.io/">Atom</a>. Before this, my site was
                 straight up <a href="https://reactjs.org/">React</a> and{" "}
                 <em>before that</em> I used{" "}
-                <a href="https://panic.com/coda/">Coda</a> and straight up HTML
-                and CSS (which I still use for a lot of things). The site is
-                powered by <a href="https://www.netlify.com/">Netlify</a>. I am
-                powered by caffeine. A lot of caffeine.
+                <a href="https://panic.com/coda/">Coda</a> and HTML and CSS
+                (which I still use for a lot of things). The site is powered by{" "}
+                <a href="https://www.netlify.com/">Netlify</a>. I am powered by
+                caffeine. A lot of caffeine.
               </p>
               <h2>Other Things</h2>
               <p>

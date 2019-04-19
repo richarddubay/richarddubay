@@ -256,4 +256,14 @@ footer {
   .pagination ul {
     padding: 0;
   }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about .gatsby-image-wrapper,
+  .about em {
+    grid-column-start: 1;
+  }
+  .about em {
+    font-size: 0.8rem;
+  }
 }

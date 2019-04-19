@@ -52,9 +52,13 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     posts.forEach((post, index) => {
-      const year = moment(post.node.frontmatter.date).format("YYYY")
-      const month = moment(post.node.frontmatter.date).format("MM")
-      const day = moment(post.node.frontmatter.date).format("DD")
+      const year = moment(post.node.frontmatter.date, "YYYY-MM-DD").format(
+        "YYYY"
+      )
+      const month = moment(post.node.frontmatter.date, "YYYY-MM-DD").format(
+        "MM"
+      )
+      const day = moment(post.node.frontmatter.date, "YYYY-MM-DD").format("DD")
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
 

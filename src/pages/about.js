@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Image from "gatsby-image"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -20,12 +21,19 @@ class AboutPage extends React.Component {
                 and nerd. I’m originally from Michigan but I’ve lived for over
                 20 years in the South. I currently live in Anderson, South
                 Carolina where I root for the{" "}
-                <a href="https://mgoblue.com/index.aspx?path=football">
+                <OutboundLink href="https://mgoblue.com/index.aspx?path=football">
                   Michigan Wolverines
-                </a>
-                , <a href="https://www.nhl.com/redwings">Detroit Red Wings</a>,
-                and <a href="https://www.49ers.com/">San Francisco 49ers</a>. Oh
-                yeah, my favorite sports teams are <em>very</em> popular here.{" "}
+                </OutboundLink>
+                ,{" "}
+                <OutboundLink href="https://www.nhl.com/redwings">
+                  Detroit Red Wings
+                </OutboundLink>
+                , and{" "}
+                <OutboundLink href="https://www.49ers.com/">
+                  San Francisco 49ers
+                </OutboundLink>
+                . Oh yeah, my favorite sports teams are <em>very</em> popular
+                here.{" "}
                 <span role="img" aria-label="joy">
                   😂
                 </span>
@@ -42,10 +50,13 @@ class AboutPage extends React.Component {
               <h2>What I Do</h2>
               <p>
                 I work in full-time ministry as a web developer for{" "}
-                <a href="https://newspring.cc/">NewSpring Church</a>. It is
-                easily the best job I've ever had. I can't imagine spending my
-                life in pursuit of a greater calling than seeing Jesus change
-                peoples lives and making Him famous through technology.
+                <OutboundLink href="https://newspring.cc/">
+                  NewSpring Church
+                </OutboundLink>
+                . It is easily the best job I've ever had. I can't imagine
+                spending my life in pursuit of a greater calling than seeing
+                Jesus change peoples lives and making Him famous through
+                technology.
               </p>
               <p>
                 I’m also a writer. I am passionate about helping people find
@@ -72,36 +83,53 @@ class AboutPage extends React.Component {
               <p>
                 I am using a pretty legit 13-inch MacBook Pro (circa 2018). My
                 writing currently happens in{" "}
-                <a href="http://www.bear-writer.com/">Bear</a> although I am
-                toying with the idea of moving to{" "}
-                <a href="https://ulysses.app/">Ulysses</a>. I’ve also recently
-                started using{" "}
-                <a href="https://culturedcode.com/things/">Things</a> to keep
-                everything together and finished as close as possible to
+                <OutboundLink href="http://www.bear-writer.com/">
+                  Bear
+                </OutboundLink>{" "}
+                although I am toying with the idea of moving to{" "}
+                <OutboundLink href="https://ulysses.app/">Ulysses</OutboundLink>
+                . I’ve also recently started using{" "}
+                <OutboundLink href="https://culturedcode.com/things/">
+                  Things
+                </OutboundLink>{" "}
+                to keep everything together and finished as close as possible to
                 on-time. This site is built with{" "}
-                <a href="https://www.gatsbyjs.org/">Gatsby</a> and edited with{" "}
-                <a href="https://atom.io/">Atom</a>. Before this, my site was
-                straight up <a href="https://reactjs.org/">React</a> and{" "}
-                <em>before that</em> I used{" "}
-                <a href="https://panic.com/coda/">Coda</a> and HTML and CSS
-                (which I still use for a lot of things). The site is powered by{" "}
-                <a href="https://www.netlify.com/">Netlify</a>. I am powered by
-                caffeine. A lot of caffeine.
+                <OutboundLink href="https://www.gatsbyjs.org/">
+                  Gatsby
+                </OutboundLink>{" "}
+                and edited with{" "}
+                <OutboundLink href="https://atom.io/">Atom</OutboundLink>.
+                Before this, my site was straight up{" "}
+                <OutboundLink href="https://reactjs.org/">React</OutboundLink>{" "}
+                and <em>before that</em> I used{" "}
+                <OutboundLink href="https://panic.com/coda/">Coda</OutboundLink>{" "}
+                and HTML and CSS (which I still use for a lot of things). The
+                site is powered by{" "}
+                <OutboundLink href="https://www.netlify.com/">
+                  Netlify
+                </OutboundLink>
+                . I am powered by caffeine. A lot of caffeine.
               </p>
               <h2>Other Things</h2>
               <p>
                 I love pretty much any gadget that{" "}
-                <a href="https://www.apple.com/">Apple</a> makes, and I have a
-                fond affection for seeing the workspaces of others. I like
-                modern design, old-school hip-hop, and{" "}
-                <a href="http://dayoneapp.com/">beautifully</a>{" "}
-                <a href="https://tapbots.com/tweetbot/">designed</a>{" "}
-                <a href="https://culturedcode.com/things/">software</a>. I also
-                feel like I’m becoming more of a nerd as I get older. I am on
-                the board of directors at the{" "}
-                <a href="http://clemsonlittletheatre.com/">
+                <OutboundLink href="https://www.apple.com/">Apple</OutboundLink>{" "}
+                makes, and I have a fond affection for seeing the workspaces of
+                others. I like modern design, old-school hip-hop, and{" "}
+                <OutboundLink href="http://dayoneapp.com/">
+                  beautifully
+                </OutboundLink>{" "}
+                <OutboundLink href="https://tapbots.com/tweetbot/">
+                  designed
+                </OutboundLink>{" "}
+                <OutboundLink href="https://culturedcode.com/things/">
+                  software
+                </OutboundLink>
+                . I also feel like I’m becoming more of a nerd as I get older. I
+                am on the board of directors at the{" "}
+                <OutboundLink href="http://clemsonlittletheatre.com/">
                   Clemson Little Theatre
-                </a>
+                </OutboundLink>
                 , I’ve been to more than one Comic Con (although I haven’t
                 started dressing up yet), and I’m beginning to get into comic
                 books more and more. Is that a little frightening? I’m not sure
@@ -110,14 +138,27 @@ class AboutPage extends React.Component {
               <h2>Places You Can Find Me</h2>
               <p>
                 I’m available in all the normal places.{" "}
-                <a href="https://www.facebook.com/richarddubay">Facebook</a>,{" "}
-                <a href="https://www.instagram.com/richarddubay/">Instagram</a>,{" "}
-                <a href="https://twitter.com/richarddubay">Twitter</a>, and by{" "}
-                <a href="mailto:rich@richarddubay.com">email</a>. For the
-                developers in the group, I can also be found on{" "}
-                <a href="https://github.com/richarddubay">Github</a>. I will do
-                my best to respond to you as quickly as I can, but please
-                understand that I still love you even if I don’t respond.
+                <OutboundLink href="https://www.facebook.com/richarddubay">
+                  Facebook
+                </OutboundLink>
+                ,{" "}
+                <OutboundLink href="https://www.instagram.com/richarddubay/">
+                  Instagram
+                </OutboundLink>
+                ,{" "}
+                <OutboundLink href="https://twitter.com/richarddubay">
+                  Twitter
+                </OutboundLink>
+                , and by{" "}
+                <OutboundLink href="mailto:rich@richarddubay.com">
+                  email
+                </OutboundLink>
+                . For the developers in the group, I can also be found on{" "}
+                <OutboundLink href="https://github.com/richarddubay">
+                  Github
+                </OutboundLink>
+                . I will do my best to respond to you as quickly as I can, but
+                please understand that I still love you even if I don’t respond.
               </p>
             </Layout>
           )

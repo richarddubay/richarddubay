@@ -10,8 +10,11 @@ function Header() {
         return (
           <nav>
             <Link to="/" className="logo">
-              <Image fixed={data.image.childImageSharp.fixed} />
+              <Image fluid={data.image.childImageSharp.fluid} />
             </Link>
+            <h1 className="wordmark">
+              Richard<span className="lastname">Dubay</span>
+            </h1>
             <ul>
               <li>
                 <Link to="/about">About</Link>
@@ -28,8 +31,8 @@ const logoQuery = graphql`
   query LogoQuery {
     image: file(absolutePath: { regex: "/logo_black.png/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

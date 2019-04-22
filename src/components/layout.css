@@ -48,9 +48,31 @@ a:hover {
 }
 
 /* #___gatsby > div > div > header > nav > a */
+.siteHeader nav a.logo {
+  line-height: 0;
+}
+
+.siteHeader nav a.logo .gatsby-image-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
 .siteHeader nav a.logo:hover {
   border: none;
   text-decoration: none;
+}
+
+.siteHeader .wordmark {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.siteHeader .wordmark .lastname {
+  font-weight: 700;
 }
 
 .main {
@@ -244,9 +266,23 @@ footer {
   .main p {
     font-size: 1.25rem;
   }
+  .siteHeader nav a.logo .gatsby-image-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+  .siteHeader .wordmark {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
+  .siteHeader nav ul li a {
+    font-size: 0.9rem;
+  }
+  .siteHeader .wordmark {
+    padding-left: 0.5rem;
+  }
   .main h1 {
     font-size: 1.5rem;
   }

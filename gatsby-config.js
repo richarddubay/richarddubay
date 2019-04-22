@@ -138,6 +138,10 @@ module.exports = {
             family: "Lora",
             variants: ["400", "700"],
           },
+          {
+            family: "Roboto Condensed",
+            variants: ["400", "700"],
+          },
         ],
       },
     },

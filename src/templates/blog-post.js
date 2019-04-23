@@ -35,12 +35,14 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p dangerouslySetInnerHTML={{ __html: post.html }} />
-        <footer>
-          <small>{post.frontmatter.date}</small>
-        </footer>
-        <div className="pagination">
+        <div className="article">
+          <h1>{post.frontmatter.title}</h1>
+          <p dangerouslySetInnerHTML={{ __html: post.html }} />
+          <footer>
+            <small>{post.frontmatter.date}</small>
+          </footer>
+        </div>
+        <div className="article pagination">
           <ul>
             <li>
               {previous && (

@@ -2,6 +2,7 @@ html {
   background-color: #ffffff;
   padding: 0;
   margin: 0;
+  display: grid;
 }
 
 ul li a {
@@ -50,6 +51,9 @@ a:hover {
 /* #___gatsby > div > div > header > nav > a */
 .siteHeader nav a.logo {
   line-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .siteHeader nav a.logo .gatsby-image-wrapper {
@@ -75,9 +79,15 @@ a:hover {
   font-weight: 700;
 }
 
+.siteHeader a.logo .wordmark {
+  color: #444;
+}
+
 .main {
-  max-width: 85vw;
-  margin: 0 auto;
+  /* max-width: 85vw; */
+  display: grid;
+  grid-template-columns: 7.5vw 85vw 7.5vw;
+  /* margin: 0 auto; */
   font-family: "Bitter", sans-serif;
   padding-top: 1rem;
 }
@@ -184,6 +194,10 @@ a:hover {
     "Segoe UI Symbol";
 }
 
+.article {
+  grid-column: 2/3;
+}
+
 footer {
   font: 0.75rem/1.625 -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
     "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -191,10 +205,16 @@ footer {
 }
 
 .footer {
-  max-width: 85vw;
-  margin: 0 auto;
+  /* max-width: 85vw; */
+  /* margin: 0 auto; */
+  display: grid;
+  grid-template-columns: 7.5vw 85vw 7.5vw;
   padding: 3rem 0 1.5rem;
   color: #999;
+}
+
+.footer ul {
+  grid-column: 2/3;
 }
 
 .footer ul li {
@@ -202,8 +222,16 @@ footer {
   padding: 0.5rem 1rem 0 0;
 }
 
+.footer ul li:first-of-type {
+  display: block;
+}
+
 .footer ul li a {
   font-size: inherit;
+}
+
+.footer .heart {
+  color: #ff0000;
 }
 
 .pagination ul {
@@ -230,26 +258,32 @@ footer {
 
 .about {
   display: grid;
+  grid-template-columns: 7.5vw 85vw 7.5vw;
+}
+
+.aboutContent {
+  grid-column: 2/3;
+}
+
+.aboutImage {
+  display: grid;
   grid-template-columns: 1fr 75% 1fr;
-  padding: 1rem 0;
 }
 
-.about .gatsby-image-wrapper,
-.about em {
-  grid-column-start: 2;
+.aboutImage .gatsby-image-wrapper {
+  margin-top: 3rem;
 }
 
-.about em {
-  align-items: center;
-  justify-content: center;
+.aboutImageGrid {
+  grid-column: 2/3;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 900px) {
-  .main {
-    max-width: 60vw;
-  }
-  .footer {
-    max-width: 60vw;
+  .main,
+  .footer,
+  .about {
+    grid-template-columns: 20vw 60vw 20vw;
   }
 }
 
@@ -304,14 +338,17 @@ footer {
   .pagination ul {
     padding: 0;
   }
-  .about {
+  .aboutImage {
     grid-template-columns: 1fr;
   }
-  .about .gatsby-image-wrapper,
-  .about em {
-    grid-column-start: 1;
+  .aboutImage .gatsby-image-wrapper {
+    margin-top: 1.5rem;
   }
-  .about em {
-    font-size: 0.8rem;
+  .aboutImageGrid {
+    grid-column: 1;
+    margin-bottom: 1.5rem;
+  }
+  .aboutImage em {
+    font-size: 0.8em;
   }
 }

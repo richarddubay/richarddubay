@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
             "MMMM DD, YYYY"
           )
           return (
-            <div key={node.fields.slug}>
+            <div className="article" key={node.fields.slug}>
               <div>
                 <h1 className="postTitle">
                   <Link
@@ -56,7 +56,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-        <div className="pagination">
+        <div className="article pagination">
           <ul>
             <li>
               {!isLast && (

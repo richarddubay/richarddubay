@@ -4,12 +4,14 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 function Footer() {
   return (
     <>
-      <p>
-        © {new Date().getFullYear()}, Built with{" "}
-        <OutboundLink href="https://www.gatsbyjs.org">Gatsby</OutboundLink> and
-        ❤️
-      </p>
       <ul>
+        <li>
+          <p>
+            © {new Date().getFullYear()}, Built with{" "}
+            <OutboundLink href="https://www.gatsbyjs.org">Gatsby</OutboundLink>{" "}
+            and <span className="heart">&lt;3</span> in South Carolina
+          </p>
+        </li>
         <li>
           <OutboundLink href="https://twitter.com/richarddubay">
             Twitter

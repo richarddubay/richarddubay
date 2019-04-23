@@ -11,10 +11,10 @@ function Header() {
           <nav>
             <Link to="/" className="logo">
               <Image fluid={data.image.childImageSharp.fluid} />
+              <h1 className="wordmark">
+                Richard<span className="lastname">Dubay</span>
+              </h1>
             </Link>
-            <h1 className="wordmark">
-              Richard<span className="lastname">Dubay</span>
-            </h1>
             <ul>
               <li>
                 <Link to="/about">About</Link>

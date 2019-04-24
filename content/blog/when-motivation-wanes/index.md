@@ -22,4 +22,4 @@ I love those topics and I truly plan on writing about them more and more as time
 
 - Would it be better just to skip the post I said I was going to write rather than post something that might not be along the same vein as the general topics that I want to cover?
 
-These are the questions running through my head this today. If you have any feedback or help, I’d love to hear it!
+These are the questions running through my head today. If you have any feedback or help, I’d love to hear it!

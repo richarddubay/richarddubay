@@ -48,7 +48,6 @@ a:hover {
   font-size: 1rem;
 }
 
-/* #___gatsby > div > div > header > nav > a */
 .siteHeader nav a.logo {
   line-height: 0;
   display: grid;
@@ -84,12 +83,10 @@ a:hover {
 }
 
 .main {
-  /* max-width: 85vw; */
   display: grid;
   grid-template-columns: 7.5vw 85vw 7.5vw;
-  /* margin: 0 auto; */
   font-family: "Bitter", sans-serif;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .main h1 {
@@ -205,8 +202,6 @@ footer {
 }
 
 .footer {
-  /* max-width: 85vw; */
-  /* margin: 0 auto; */
   display: grid;
   grid-template-columns: 7.5vw 85vw 7.5vw;
   padding: 3rem 0 1.5rem;
@@ -272,6 +267,7 @@ footer {
 
 .aboutImage .gatsby-image-wrapper {
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .aboutImageGrid {

@@ -51,20 +51,19 @@ class AboutPage extends React.Component {
                   </div>{" "}
                   <h2>What I Do</h2>
                   <p>
-                    I work in full-time ministry as a web developer for{" "}
+                    I work in full-time ministry as a software engineer at{" "}
                     <OutboundLink href="https://newspring.cc/">
                       NewSpring Church
                     </OutboundLink>
-                    . It is easily the best job I've ever had. I can't imagine
+                    . It is easily the best job I’ve ever had. I can't imagine
                     spending my life in pursuit of a greater calling than seeing
                     Jesus change peoples lives and making Him famous through
                     technology.
                   </p>
                   <p>
                     I’m also a writer. I am passionate about helping people find
-                    their purpose, rediscover their passions, and how to tie
-                    these together into what you do. This site is where I get to
-                    talk about these things. I also write about God, technology,
+                    their purpose and rediscover their passions. That’s the main
+                    purpose of this site. I also write about God, technology,
                     writing (ironically), and other sundry things.
                   </p>
                   <p>

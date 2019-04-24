@@ -7,7 +7,7 @@ function Footer() {
       <ul>
         <li>
           <p>
-            © {new Date().getFullYear()}, Built with{" "}
+            © {new Date().getFullYear()} | Built with{" "}
             <OutboundLink href="https://www.gatsbyjs.org">Gatsby</OutboundLink>{" "}
             and <span className="heart">&lt;3</span> in South Carolina
           </p>

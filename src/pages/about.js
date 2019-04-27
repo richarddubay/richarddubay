@@ -102,7 +102,7 @@ class AboutPage extends React.Component {
                     </OutboundLink>{" "}
                     and edited with{" "}
                     <OutboundLink href="https://atom.io/">Atom</OutboundLink>.
-                    Before this, my site was straight up{" "}
+                    Before this, my site was built using{" "}
                     <OutboundLink href="https://reactjs.org/">
                       React
                     </OutboundLink>{" "}
@@ -110,8 +110,8 @@ class AboutPage extends React.Component {
                     <OutboundLink href="https://panic.com/coda/">
                       Coda
                     </OutboundLink>{" "}
-                    and HTML and CSS (which I still use for a lot of things).
-                    The site is powered by{" "}
+                    and straight up HTML and CSS (which I still use for a lot of
+                    things). The site is powered by{" "}
                     <OutboundLink href="https://www.netlify.com/">
                       Netlify
                     </OutboundLink>

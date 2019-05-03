@@ -53,6 +53,14 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           content: image,
         },
         {
+          property: "og:image:width",
+          content: "1700",
+        },
+        {
+          property: "og:image:height",
+          content: "630",
+        },
+        {
           property: "og:type",
           content: "website",
         },
@@ -92,7 +100,7 @@ SEO.defaultProps = {
   lang: "en",
   meta: [],
   title: "",
-  image: "content/assets/share-image.png",
+  image: `${site.siteUrl}` + "content/assets/share-image.png",
 }
 
 SEO.propTypes = {

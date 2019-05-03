@@ -4,7 +4,7 @@ module.exports = {
     author: "Richard Dubay",
     description: "My website.",
     image: "/share-image.png",
-    siteUrl: "https://richarddubay.com/blog/",
+    siteUrl: "https://richarddubay.com/",
     social: {
       twitter: "richarddubay",
     },

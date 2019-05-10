@@ -3,8 +3,8 @@ module.exports = {
     title: "Richard Dubay",
     author: "Richard Dubay",
     description: "My website.",
-    image: "/share-image.png",
-    siteUrl: "https://richarddubay.com/",
+    image: "share-image.png",
+    siteUrl: "https://www.richarddubay.com/",
     social: {
       twitter: "@richarddubay",
     },

@@ -22,7 +22,13 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
             image
             siteUrl
             social {
-              twitter
+              facebook {
+                shareImage
+              }
+              twitter {
+                profileName
+                shareImage
+              }
             }
           }
         }
@@ -31,7 +37,9 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = image || site.siteMetadata.image
+  const facebookMetaImage =
+    image || site.siteMetadata.social.facebook.shareImage
+  const twitterMetaImage = image || site.siteMetadata.social.twitter.shareImage
 
   return (
     <Helmet
@@ -56,7 +64,7 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
         },
         {
           property: "og:image",
-          content: `${site.siteMetadata.siteUrl}${metaImage}`,
+          content: `${site.siteMetadata.siteUrl}${facebookMetaImage}`,
         },
         {
           property: "og:image:width",
@@ -88,11 +96,11 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
         },
         {
           name: "twitter:image",
-          content: `${site.siteMetadata.siteUrl}${metaImage}`,
+          content: `${site.siteMetadata.siteUrl}${twitterMetaImage}`,
         },
         {
           name: "twitter:site",
-          content: site.siteMetadata.social.twitter,
+          content: site.siteMetadata.social.twitter.profileName,
         },
       ]
         .concat(

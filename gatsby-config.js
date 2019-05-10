@@ -7,7 +7,13 @@ module.exports = {
     image: "share-image.png",
     siteUrl: "https://www.richarddubay.com/",
     social: {
-      twitter: "@richarddubay",
+      facebook: {
+        shareImage: "facebook-share-image.png",
+      },
+      twitter: {
+        profileName: "@richarddubay",
+        shareImage: "twitter-share-image.png",
+      },
     },
   },
   plugins: [

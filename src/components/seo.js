@@ -47,7 +47,7 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
         lang,
       }}
       title={title}
-      image={metaImage}
+      image={facebookMetaImage}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {

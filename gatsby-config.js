@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Richard Dubay",
     author: "Richard Dubay",
-    description: "My website.",
+    description:
+      "A dead man made alive through Jesus. Husband. Dad. Developer at NewSpring Church.",
     image: "share-image.png",
     siteUrl: "https://www.richarddubay.com/",
     social: {

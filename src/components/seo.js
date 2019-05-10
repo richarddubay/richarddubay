@@ -72,7 +72,7 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
         },
         {
           name: "twitter:card",
-          content: "summary",
+          content: "summary_large_image",
         },
         {
           name: "twitter:creator",

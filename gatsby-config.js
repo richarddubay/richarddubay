@@ -6,7 +6,7 @@ module.exports = {
     image: "/share-image.png",
     siteUrl: "https://richarddubay.com/",
     social: {
-      twitter: "richarddubay",
+      twitter: "@richarddubay",
     },
   },
   plugins: [

@@ -21,6 +21,9 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
             author
             image
             siteUrl
+            social {
+              twitter
+            }
           }
         }
       }
@@ -86,6 +89,10 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
         {
           name: "twitter:image",
           content: metaImage,
+        },
+        {
+          name: "twitter:site",
+          content: site.siteMetadata.social.twitter,
         },
       ]
         .concat(

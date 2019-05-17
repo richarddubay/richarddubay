@@ -20,7 +20,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Home | Richard Dubay"
+          title="Home"
           keywords={["blog", "gatsby", "javascript", "react"]}
         />
         {posts.map(({ node }) => {

@@ -44,7 +44,8 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h1>
-                <p
+                <div
+                  className="content"
                   dangerouslySetInnerHTML={{
                     __html: node.html,
                   }}

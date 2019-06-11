@@ -289,8 +289,8 @@ footer {
 }
 
 .four-o-four .text {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   z-index: 10;
@@ -358,10 +358,6 @@ footer {
   .siteHeader .wordmark {
     font-size: 1.25rem;
     padding-left: 1rem;
-  }
-  .four-o-four .text {
-    grid-column-start: 1;
-    grid-column-end: 4;
   }
   .four-o-four h1 {
     font-size: 1.5rem;

@@ -316,7 +316,7 @@ footer {
 
 .unsplash {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
   padding: 1em;
@@ -358,6 +358,20 @@ footer {
   .siteHeader .wordmark {
     font-size: 1.25rem;
     padding-left: 1rem;
+  }
+  .four-o-four .text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .four-o-four h1 {
+    font-size: 1.5rem;
+  }
+  /* .four-o-four p {
+    font-size: 0.8rem;
+  } */
+  .unsplash {
+    font-size: 0.8rem;
+    padding: 1em 1em;
   }
 }
 
@@ -401,5 +415,16 @@ footer {
   }
   .aboutImage em {
     font-size: 0.8em;
+  }
+  .four-o-four p {
+    font-size: 0.8rem;
+  }
+  .four-o-four h1 {
+    border-right: none;
+  }
+  .four-o-four h1,
+  .four-o-four p {
+    padding: 10px 0;
+    display: block;
   }
 }

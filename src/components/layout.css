@@ -283,6 +283,11 @@ footer {
   height: 100vh;
 }
 
+.four-o-four a {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
 .four-o-four .image {
   width: 100%;
   height: 100%;
@@ -312,6 +317,10 @@ footer {
 .four-o-four h1 {
   font-size: 2rem;
   border-right: 1px solid #ffffff;
+}
+
+.four-o-four .home {
+  padding: 10px;
 }
 
 .unsplash {
@@ -409,7 +418,8 @@ footer {
   .aboutImage em {
     font-size: 0.8em;
   }
-  .four-o-four p {
+  .four-o-four p,
+  .four-o-four .home {
     font-size: 0.8rem;
   }
   .four-o-four h1 {

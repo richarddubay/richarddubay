@@ -10,7 +10,7 @@ class NotFoundPage extends React.Component {
 
     return (
       <div className="four-o-four">
-        <SEO title="404: Not Found" />
+        <SEO title="404" />
         <Image
           className="image"
           fluid={data.background.childImageSharp.fluid}

@@ -14,7 +14,7 @@ class AboutPage extends React.Component {
           const siteTitle = data.site.siteMetadata.title
           return (
             <Layout location={this.props.location} title={siteTitle}>
-              <SEO title="About Page" />
+              <SEO title="About" />
               <section className="about">
                 <div className="aboutContent">
                   <h1>Welcome</h1>

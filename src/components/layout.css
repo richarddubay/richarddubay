@@ -339,10 +339,20 @@ footer {
     "Segoe UI Symbol";
 }
 
+.archives {
+  display: grid;
+  grid-template-columns: 7.5vw 85vw 7.5vw;
+}
+
+.archiveContent {
+  grid-column: 2/3;
+}
+
 @media (min-width: 900px) {
   .main,
   .footer,
-  .about {
+  .about,
+  .archives {
     grid-template-columns: 20vw 60vw 20vw;
   }
 }

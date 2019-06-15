@@ -5,9 +5,9 @@ html {
   display: grid;
 }
 
-ul li a {
+/* ul li a {
   font-size: 1.25rem;
-}
+} */
 
 a:hover {
   text-decoration: none;

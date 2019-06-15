@@ -37,7 +37,10 @@ class BlogPostTemplate extends React.Component {
         />
         <div className="article">
           <h1 className="postTitle">{post.frontmatter.title}</h1>
-          <p dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
           <footer>
             <small>{post.frontmatter.date}</small>
           </footer>

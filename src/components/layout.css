@@ -88,9 +88,6 @@ a:hover {
 .main h1 {
   font-size: 3rem;
   padding-bottom: 0.5rem;
-}
-
-.main h1 {
   width: 75%;
   display: block;
 }
@@ -356,8 +353,6 @@ footer {
 @media (max-width: 768px) {
   .main h1 {
     font-size: 2.25rem;
-  }
-  .main h1 a {
     width: 100%;
   }
   .main h2 {

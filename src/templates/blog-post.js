@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <div className="article">
-          <h1>{post.frontmatter.title}</h1>
+          <h1 className="postTitle">{post.frontmatter.title}</h1>
           <p dangerouslySetInnerHTML={{ __html: post.html }} />
           <footer>
             <small>{post.frontmatter.date}</small>

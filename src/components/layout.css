@@ -277,6 +277,10 @@ a:hover {
   grid-template-columns: 1fr 75% 1fr;
 }
 
+.aboutImage em {
+  font-size: 0.75em;
+}
+
 .aboutImage .gatsby-image-wrapper {
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -285,10 +289,6 @@ a:hover {
 .aboutImageGrid {
   grid-column: 2/3;
   margin-bottom: 3rem;
-}
-
-.aboutImageGrid em {
-  font-size: 0.75em;
 }
 
 .four-o-four {
@@ -435,7 +435,7 @@ a:hover {
     margin-bottom: 1.5rem;
   }
   .aboutImage em {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
   .four-o-four p,
   .four-o-four .home {

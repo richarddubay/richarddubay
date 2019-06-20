@@ -134,7 +134,7 @@ module.exports = {
         fonts: [
           {
             family: "Merriweather",
-            variants: ["300", "400", "400i", "700"],
+            variants: ["300", "300i", "400", "400i", "700"],
           },
           {
             family: "Roboto Condensed",

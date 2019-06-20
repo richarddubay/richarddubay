@@ -3,6 +3,9 @@ html {
   padding: 0;
   margin: 0;
   display: grid;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 a:hover {
@@ -24,9 +27,6 @@ a:hover {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  font: 100%/1.625 -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
 }
 
 .siteHeader nav ul {
@@ -81,15 +81,37 @@ a:hover {
 .main {
   display: grid;
   grid-template-columns: 7.5vw 85vw 7.5vw;
-  font-family: "Bitter", sans-serif;
   padding-top: 2rem;
+}
+
+.main .content {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+}
+
+.main p {
+  padding: 0.5rem 0 1rem;
+}
+
+.main h1,
+.main h2,
+.main h3,
+.main h4,
+.main h5,
+.main h6 {
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 .main h1 {
   font-size: 3rem;
   padding-bottom: 0.5rem;
-  width: 75%;
+  width: 100%;
   display: block;
+  font-weight: 700;
 }
 
 .main h1 a:hover {
@@ -125,17 +147,9 @@ a:hover {
   padding-top: 1rem;
 }
 
-.main p,
-.main .content {
-  font-size: 1.5rem;
-  line-height: 1.75;
-  padding: 0.5rem 0 1rem;
-  font-family: "Lora", sans-serif;
-}
-
 .main ul {
-  list-style-type: disc;
-  padding: 0.5rem 3rem 1rem;
+  list-style: disc inside none;
+  padding: 1rem 0;
 }
 
 .main ul li p {
@@ -143,7 +157,7 @@ a:hover {
 }
 
 .main ol {
-  list-style-type: decimal;
+  list-style: decimal inside none;
   padding: 1rem 0;
 }
 
@@ -180,19 +194,10 @@ a:hover {
   padding: 1rem 0;
   border-top: 1px solid #ddd;
   color: #ddd;
-  font: 100%/1.625 -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
 }
 
 .article {
   grid-column: 2/3;
-}
-
-footer {
-  font: 0.75rem/1.625 -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
 }
 
 .footer {
@@ -200,6 +205,7 @@ footer {
   grid-template-columns: 7.5vw 85vw 7.5vw;
   padding: 3rem 0 1.5rem;
   color: #999;
+  font-size: 0.75rem;
 }
 
 .footer ul {
@@ -228,9 +234,6 @@ footer {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   padding: 0;
-  font: 100%/1.625 -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
 }
 
 .pagination ul li:last-child {
@@ -295,9 +298,6 @@ footer {
   text-align: center;
   align-self: center;
   color: #ffffff;
-  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
 }
 
 .four-o-four h1,
@@ -327,9 +327,6 @@ footer {
   text-align: left;
   align-self: end;
   color: #ffffff;
-  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
 }
 
 .archives {
@@ -353,7 +350,6 @@ footer {
 @media (max-width: 768px) {
   .main h1 {
     font-size: 2.25rem;
-    width: 100%;
   }
   .main h2 {
     font-size: 1.75rem;
@@ -361,7 +357,7 @@ footer {
   .main p,
   .main ul,
   .main ol {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   .siteHeader nav a.logo .gatsby-image-wrapper {
     width: 36px;
@@ -402,11 +398,8 @@ footer {
     padding: 0.75rem 1.5rem;
   }
   .main ul {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0;
   }
-  /* ul li a {
-    font-size: 1rem;
-  } */
   .pagination ul {
     padding: 0;
   }

@@ -176,15 +176,20 @@ a:hover {
 }
 
 .main blockquote {
-  border-left: 3px solid #ddd;
+  border-left: 5px solid #e90a16;
   padding: 1.5rem 3rem;
   margin: 1.5rem 0;
-  color: #888;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
+  font-style: italic;
 }
 
 .main blockquote p {
   padding: 0.5rem 0;
+}
+
+.main blockquote em {
+  font-style: normal;
+  font-weight: 700;
 }
 
 .main hr {

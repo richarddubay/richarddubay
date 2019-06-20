@@ -28,7 +28,7 @@ We’ve covered it before but I’m going to say it again: we don’t know how t
 
 A few weeks ago we talked about how God modeled the idea of a “sabbath” every seventh day. The creation story tells us that God rested on the seventh day (Genesis 2:2-3) and in Exodus 20:8-11 he even made rest one of the Ten Commandments:
 
-> “Remember the Sabbath day by keeping it holy. Six days you shall labor and do all your work, but the seventh day is a sabbath to the Lord your God. On it you shall not do any work, neither you, nor your son or daughter, nor your male or female servant, nor your animals, nor any foreigner residing in your towns. For in six days the Lord made the heavens and the earth, the sea, and all that is in them, but he rested on the seventh day. Therefore the Lord blessed the Sabbath day and made it holy.
+> “Remember the Sabbath day by keeping it holy. Six days you shall labor and do all your work, but the seventh day is a sabbath to the Lord your God. On it you shall not do any work, neither you, nor your son or daughter, nor your male or female servant, nor your animals, nor any foreigner residing in your towns. For in six days the Lord made the heavens and the earth, the sea, and all that is in them, but he rested on the seventh day. Therefore the Lord blessed the Sabbath day and made it holy.”
 
 Heading to the New Testament, Jesus talks about the Sabbath as well. We find the following in Mark 2:27:
 

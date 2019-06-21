@@ -449,4 +449,10 @@ a:hover {
     padding: 10px 0;
     display: block;
   }
+
+  @media (max-width: 375px) {
+    .siteHeader a.logo .wordmark {
+      display: none;
+    }
+  }
 }

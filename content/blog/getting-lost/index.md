@@ -2,6 +2,7 @@
 title: "Getting Lost"
 date: "2018-10-26"
 description: "Sometimes getting lost is the best way to find yourself."
+tags: ["article", "life"]
 ---
 
 We had no idea where we were or how long it would take us to get back.

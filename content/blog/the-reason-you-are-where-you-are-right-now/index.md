@@ -2,6 +2,7 @@
 title: "The Reason You Are Where You Are Right Now"
 date: "2018-09-07"
 description: "You get to choose where you want your life to go."
+tags: ["article", "life"]
 ---
 
 **Spoiler Alert**: It’s because you’ve **chosen** to be there.

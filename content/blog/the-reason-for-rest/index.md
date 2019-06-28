@@ -2,6 +2,7 @@
 title: "The Reason for Rest"
 date: "2019-05-03"
 description: "Why rest in the first place?"
+tags: ["article", "rest"]
 ---
 
 A few weeks ago we started a discussion about rest. If you missed any of those posts you can find them here:

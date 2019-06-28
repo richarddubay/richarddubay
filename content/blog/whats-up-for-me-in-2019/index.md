@@ -2,6 +2,7 @@
 title: "What’s Up For Me In 2019"
 date: "2018-12-28"
 description: "Sharing your goals makes them real. Here are some of my biggest goals for the next year."
+tags: ["article", "goals", "new year"]
 ---
 
 A couple weeks ago I talked to you about setting goals ([Your Best Year Ever](https://medium.com/@richarddubay/your-best-year-ever-b8e5388fd600)). One thing I ran out of room in that post to talk about was sharing your goals. When you put yourself out in the public eye and you have the guts to share what it is that you are planning to do, you immediately gain accountability partners. These are people who can help you along the path to achieving your goals. As soon as you talk to someone about what you’re planning to do they are automatically recruited to help you on your journey. They become stakeholders. They are now a part of your fellowship.

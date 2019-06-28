@@ -2,6 +2,7 @@
 title: "Re-Center"
 date: "2019-02-22"
 description: "Your GPS has a “re-center” button. So can your life."
+tags: ["article", "life"]
 ---
 
 You know when you’re using the GPS on your phone and you scroll the map to look at some other point, there is always a button that says “Re-Center”? Just the push of that one little button and you are right back on course and tracking with the map.

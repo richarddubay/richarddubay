@@ -2,6 +2,7 @@
 title: "Finding Life, Part 1: Your Passions"
 date: "2019-01-11"
 description: "You have passions, they exist for a reason, and they are good."
+tags: ["article", "life", "passion"]
 ---
 
 Welcome back! This is the start of a series of posts about discovering your path to a life of passion, mission, purpose, and freedom. If you missed last weeks introduction, you can find it [here](https://medium.com/@richarddubay/finding-life-part-0-an-introduction-cf2f04138cb1).

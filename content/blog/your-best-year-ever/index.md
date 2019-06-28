@@ -2,6 +2,7 @@
 title: "Your Best Year Ever"
 date: "2018-12-14"
 description: "The new year is a chance for a fresh start. You really can accomplish your dreams."
+tags: ["article", "new year"]
 ---
 
 I love the fresh, clean feeling of new things, don’t you? Opening up that new laptop for the first time. The sound of the spine creaking as you open a new book. The smell of a freshly opened can of tennis balls.

@@ -2,6 +2,7 @@
 title: "A Worthy Life"
 date: "2018-11-02"
 description: "When we a life worthy of the gospel, our whole lives testify."
+tags: ["article", "life", "gospel"]
 ---
 
 > “Just one thing: live your life in a manner worthy of the gospel of Christ.”

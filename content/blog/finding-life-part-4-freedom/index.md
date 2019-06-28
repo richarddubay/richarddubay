@@ -2,6 +2,7 @@
 title: "Finding Life, Part 4: Freedom"
 date: "2019-02-01"
 description: "Most of us live in a prison of our own creation every day."
+tags: ["article", "freedom", "life"]
 ---
 
 Welcome back! We’re in the middle of a series about discovering your path to a life of passion, mission, purpose, and freedom. The previous posts can be found here:

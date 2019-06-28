@@ -2,6 +2,7 @@
 title: "A New Mindset"
 date: "2019-05-10"
 description: "All true change starts with changing how you think."
+tags: ["article", "change", "mindset", "rest"]
 ---
 
 All true change starts with changing how you think. Of course, thinking alone won’t do it, you have to put action to the thoughts. Without action all your really have are dreams. But it all starts with changing your thoughts. I believe you can make major changes in your life just by changing the way you think.

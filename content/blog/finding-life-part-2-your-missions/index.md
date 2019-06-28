@@ -2,6 +2,7 @@
 title: "Finding Life, Part 2: Your Missions"
 date: "2019-01-18"
 description: "Passion with direction or intention toward a purpose."
+tags: ["article", "life", "mission"]
 ---
 
 Welcome back!

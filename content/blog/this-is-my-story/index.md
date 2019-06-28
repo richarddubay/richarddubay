@@ -2,6 +2,7 @@
 title: "This is My Story"
 date: "2018-11-09"
 description: "If I could sum up my story in one word it would be … pursuit."
+tags: ["article", "testimony"]
 ---
 
 My story is a story of pursuit. God’s pursuit of me and my pursuit of everything else. I know that God has been pursuing me since the day that I was born and I can see that He continues to pursue me today.

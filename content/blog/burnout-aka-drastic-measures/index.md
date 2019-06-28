@@ -2,6 +2,7 @@
 title: "Burnout (a.k.a. 'Drastic Measures')"
 date: "2019-06-21"
 description: "Burnout breaks all the rules"
+tags: ["article", "burnout", "rest"]
 ---
 
 > “If you’re wondering whether you’re burned out, you already are.”

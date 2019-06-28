@@ -2,6 +2,7 @@
 title: "Practical Ways to Rest #1"
 date: "2019-05-24"
 description: "It all starts with Sabbath."
+tags: ["article", "rest"]
 ---
 
 Guys and gals … we’ve done it. We’ve made it to the part of the series where we finally get to learn some ways we can start to pay back our energy debt.

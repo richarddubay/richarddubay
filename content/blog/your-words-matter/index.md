@@ -2,6 +2,7 @@
 title: "Your Words Matter"
 date: "2018-08-24"
 description: "Your words have power. How you choose to use them matters more than you might think."
+tags: ["article", "words"]
 ---
 
 It’s most likely common knowledge. You probably know this already. This is nothing new. Yet, I feel like I need to say it anyway:

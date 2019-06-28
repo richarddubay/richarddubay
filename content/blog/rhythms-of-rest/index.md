@@ -2,6 +2,7 @@
 title: "Rhythms of Rest"
 date: "2018-09-14"
 description: "Fall is natures way of saying that it’s time to start slowing down."
+tags: ["article", "rest"]
 ---
 
 Fall is my favorite season. Cooler temperatures and leaves that burst into brilliant shades of yellow, orange, and brown make my heart happy. It almost feels as if the universe is sending a signal to the rest of the world that it’s time to start picking things up and putting them away for the year. That it’s time to start slowing down.

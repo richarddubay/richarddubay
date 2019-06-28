@@ -2,6 +2,7 @@
 title: "Ground Rules for Rest"
 date: "2019-05-17"
 description: "To use any new tool well you are going to need instructions."
+tags: ["article", "rest"]
 ---
 
 Welcome back everyone! So far we’ve covered [our problem with rest](https://www.richarddubay.com/2019/04/12/our-problem-with-rest/), [what rest actually is](https://www.richarddubay.com/2019/04/19/what-is-rest/), [the reason why we should rest](https://www.richarddubay.com/2019/05/03/the-reason-for-rest/), and just last week we went over [a change in how we think](https://www.richarddubay.com/2019/05/10/a-new-mindset/) that can help us change how we rest. If you’ve missed any of those posts, head to those links and check them out before continuing here.

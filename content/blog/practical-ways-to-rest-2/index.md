@@ -2,6 +2,7 @@
 title: "Practical Ways to Rest #2"
 date: "2019-05-31"
 description: "We all could use a nice vacation."
+tags: ["article", "rest"]
 ---
 
 Welcome back!

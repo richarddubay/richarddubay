@@ -2,6 +2,7 @@
 title: "Year Six"
 date: "2019-03-08"
 description: "Some thoughts on six years of ministry at NewSpring Church."
+tags: ["article", "work", "ministry", "newspring"]
 ---
 
 I’ve had the pleasure of being on staff at NewSpring Church for 6 years now. It’s easily the best job I’ve ever had. As a web developer, I get to use code to create sites and apps that help people get closer to Jesus and each other. I can’t imagine spending my life in pursuit of a greater calling than seeing Jesus change peoples lives and making Him famous … and I get to do that with code! So much fun!

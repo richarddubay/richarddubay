@@ -2,6 +2,7 @@
 title: "I Haven’t Even Been Trying"
 date: "2019-03-01"
 description: "Conviction isn’t all bad."
+tags: ["article", "conviction", "life", "motivation"]
 ---
 
 I had a sort of mini-revelation this week. Well, a couple of them actually. The first one is this:

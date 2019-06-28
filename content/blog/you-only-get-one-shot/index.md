@@ -2,6 +2,7 @@
 title: "You Only Get One Shot"
 date: "2018-10-19"
 description: "Are you doing everything you want to be doing with your one life?"
+tags: ["article", "life"]
 ---
 
 > I am not throwing away my shot  

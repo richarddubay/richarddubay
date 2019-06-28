@@ -2,6 +2,7 @@
 title: "Telling Yourself the Truth"
 date: "2018-10-12"
 description: "What you believe about yourself when you fail makes all the difference."
+tags: ["article", "failure", "truth"]
 ---
 
 I’m completely set up to be successful in my writing endeavor this morning.
@@ -12,7 +13,7 @@ The whole house is quiet, it’s dark outside. I’ve got my morning beverage of
 
 An hour later I’ve got bits and pieces of a lot of things, but none of it makes any sense. It’s all over the place and none of it ties together. I’ve written about three different topics because I can’t seem to focus on any one thing. The time I had for writing has come and gone.
 
-“I’m such a hack,” I tell myself. “There’s no way you’ll ever be a /real/ writer.”
+“I’m such a hack,” I tell myself. “There’s no way you’ll ever be a _real_ writer.”
 
 It’s in these moments that I have a choice. I can choose to believe what I’m telling myself, or I can choose to believe the truth.
 

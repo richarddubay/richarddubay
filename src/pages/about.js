@@ -62,9 +62,9 @@ class AboutPage extends React.Component {
                   </p>
                   <p>
                     I’m also a writer. I am passionate about helping people find
-                    their purpose and rediscover their passions. That’s the main
-                    purpose of this site. I also write about God, technology,
-                    writing (ironically), and other sundry things.
+                    their purpose and rediscover their passions. I also write
+                    about God, technology, writing (ironically), and other
+                    sundry things.
                   </p>
                   <p>
                     I’ve also started working on a book.{" "}

@@ -2,14 +2,13 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import moment from "moment"
 
+// Component Imports
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class BlogIndex extends React.Component {
+class BlogListTemplate extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const posts = this.props.data.allMarkdownRemark.edges
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
@@ -18,7 +17,7 @@ class BlogIndex extends React.Component {
     const nextPage = "/page/" + (currentPage + 1).toString()
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <SEO
           title="Home"
           keywords={["blog", "gatsby", "javascript", "react"]}
@@ -80,15 +79,10 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default BlogListTemplate
 
-export const blogListQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+export const blogListTemplateQuery = graphql`
+  query BlogListTemplate($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit

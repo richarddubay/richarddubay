@@ -2,18 +2,17 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
+// Component Imports
 import SEO from "../components/seo"
 
 class NotFoundPage extends React.Component {
   render() {
-    const { data } = this.props
-
     return (
       <div className="four-o-four">
         <SEO title="404" />
         <Image
           className="image"
-          fluid={data.background.childImageSharp.fluid}
+          fluid={this.props.data.background.childImageSharp.fluid}
           style={{ position: `fixed` }}
         />
         <div className="text">
@@ -42,13 +41,8 @@ class NotFoundPage extends React.Component {
 
 export default NotFoundPage
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+export const notFoundPageQuery = graphql`
+  query NotFoundPage {
     background: file(absolutePath: { regex: "/404.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {

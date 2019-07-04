@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
+
+// Component Imports
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -11,9 +13,8 @@ class AboutPage extends React.Component {
       <StaticQuery
         query={aboutPageQuery}
         render={data => {
-          const siteTitle = data.site.siteMetadata.title
           return (
-            <Layout location={this.props.location} title={siteTitle}>
+            <Layout>
               <SEO title="About" />
               <section className="about">
                 <div className="aboutContent">
@@ -183,12 +184,7 @@ class AboutPage extends React.Component {
 export default AboutPage
 
 export const aboutPageQuery = graphql`
-  query AboutPageQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+  query AboutPage {
     avatar: file(absolutePath: { regex: "/rich_heav.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {

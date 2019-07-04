@@ -2,13 +2,13 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import moment from "moment"
 
+// Component Imports
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const previousYear = previous
       ? moment(previous.frontmatter.date, "YYYY-MM-DD").format("YYYY")
@@ -30,7 +30,7 @@ class BlogPostTemplate extends React.Component {
       : null
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -92,14 +92,8 @@ class BlogPostTemplate extends React.Component {
 
 export default BlogPostTemplate
 
-export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
+export const blogPostTemplateQuery = graphql`
+  query BlogPostTemplate($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)

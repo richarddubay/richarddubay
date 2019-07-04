@@ -6,9 +6,9 @@ const { createFilePath } = require("gatsby-source-filesystem")
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogList = path.resolve("./src/templates/blog-list.js")
-  const blogPost = path.resolve("./src/templates/blog-post.js")
-  const tagTemplate = path.resolve("./src/templates/tags.js")
+  const blogListTemplate = path.resolve("./src/templates/blog-list.js")
+  const blogPostTemplate = path.resolve("./src/templates/blog-post.js")
+  const tagsTemplate = path.resolve("./src/templates/tags.js")
   return graphql(
     `
       {
@@ -37,15 +37,14 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges
-
     const postsPerPage = 6
     const numPages = Math.ceil(posts.length / postsPerPage)
 
-    // Create blog list pages.
+    // Create the blog list page.
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/` : `/page/${i + 1}`,
-        component: blogList,
+        component: blogListTemplate,
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
@@ -69,7 +68,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       createPage({
         path: year + "/" + month + "/" + day + post.node.fields.slug,
-        component: blogPost,
+        component: blogPostTemplate,
         context: {
           slug: post.node.fields.slug,
           previous,
@@ -80,12 +79,14 @@ exports.createPages = ({ graphql, actions }) => {
 
     // Create the tag pages
     let tags = []
+
     // Iterate through each post, putting all found tags into `tags`
-    _.each(posts, edge => {
-      if (_.get(edge, "node.frontmatter.tags")) {
-        tags = tags.concat(edge.node.frontmatter.tags)
+    posts.forEach(post => {
+      if (post.node.frontmatter.tags) {
+        tags = tags.concat(post.node.frontmatter.tags)
       }
     })
+
     // Eliminate duplicate tags
     tags = _.uniq(tags)
 
@@ -93,7 +94,7 @@ exports.createPages = ({ graphql, actions }) => {
     tags.forEach(tag => {
       createPage({
         path: `/tags/${_.kebabCase(tag)}/`,
-        component: tagTemplate,
+        component: tagsTemplate,
         context: {
           tag,
         },

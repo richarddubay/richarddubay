@@ -1,25 +1,25 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import moment from "moment"
+
+// Component Imports
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class Tags extends React.Component {
+class TagTemplate extends React.Component {
   render() {
-    const { data, pageContext } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const { tag } = pageContext
-    const { edges, totalCount } = data.allMarkdownRemark
+    const { tag } = this.props.pageContext
+    const { edges, totalCount } = this.props.data.allMarkdownRemark
     const tagHeader = `${totalCount} post${
       totalCount === 1 ? "" : "s"
     } tagged with "${tag}"`
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <SEO title={tag} keywords={["blog", "gatsby", "javascript", "react"]} />
         <section className="tags">
           <div className="tagContent">
-            <h1 className="postTitle">{tagHeader}</h1>
+            <h1>{tagHeader}</h1>
             {edges.map(({ node }) => {
               const { slug } = node.fields
               const { title } = node.frontmatter
@@ -33,7 +33,7 @@ class Tags extends React.Component {
                 "DD"
               )
               return (
-                <div className="article" key={node.fields.slug}>
+                <div key={node.fields.slug}>
                   <p>
                     <Link to={"/" + year + "/" + month + "/" + day + slug}>
                       {title}
@@ -52,15 +52,10 @@ class Tags extends React.Component {
   }
 }
 
-export default Tags
+export default TagTemplate
 
-export const pageQuery = graphql`
-  query($tag: String) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+export const tagTemplateQuery = graphql`
+  query TagTemplate($tag: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }

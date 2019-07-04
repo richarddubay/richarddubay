@@ -1,16 +1,16 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import kebabCase from "lodash/kebabCase"
+
+// Component Imports
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class TagsPage extends React.Component {
+class TagListPage extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const group = data.allMarkdownRemark.group
+    const group = this.props.data.allMarkdownRemark.group
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <SEO
           title="Tags"
           keywords={["blog", "gatsby", "javascript", "react"]}
@@ -19,7 +19,7 @@ class TagsPage extends React.Component {
           <div className="tagContent">
             <h1>Tags</h1>
             {group.map(tag => (
-              <div className="article" key={tag.fieldValue}>
+              <div key={tag.fieldValue}>
                 <p>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                     {tag.fieldValue} ({tag.totalCount})
@@ -34,15 +34,10 @@ class TagsPage extends React.Component {
   }
 }
 
-export default TagsPage
+export default TagListPage
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+export const TagListQuery = graphql`
+  query TagList {
     allMarkdownRemark(limit: 2000) {
       group(field: frontmatter___tags) {
         fieldValue

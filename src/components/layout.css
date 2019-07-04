@@ -347,12 +347,14 @@ a:hover {
   color: #ffffff;
 }
 
-.archives {
+.archives,
+.tags {
   display: grid;
   grid-template-columns: 7.5vw 85vw 7.5vw;
 }
 
-.archiveContent {
+.archiveContent,
+.tagContent {
   grid-column: 2/3;
   font-size: 1.25rem;
   font-family: "Merriweather", serif;
@@ -363,7 +365,8 @@ a:hover {
   .main,
   .footer,
   .about,
-  .archives {
+  .archives,
+  .tags {
     grid-template-columns: 20vw 60vw 20vw;
   }
 }

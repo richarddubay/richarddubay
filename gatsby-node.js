@@ -1,5 +1,6 @@
 const moment = require("moment")
 const path = require("path")
+const _ = require("lodash")
 const { createFilePath } = require("gatsby-source-filesystem")
 
 exports.createPages = ({ graphql, actions }) => {
@@ -7,6 +8,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   const blogList = path.resolve("./src/templates/blog-list.js")
   const blogPost = path.resolve("./src/templates/blog-post.js")
+  const tagTemplate = path.resolve("./src/templates/tags.js")
   return graphql(
     `
       {
@@ -22,6 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 date(formatString: "YYYY/MM/DD")
                 title
+                tags
               }
             }
           }
@@ -33,11 +36,12 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
 
     const postsPerPage = 6
     const numPages = Math.ceil(posts.length / postsPerPage)
+
+    // Create blog list pages.
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/` : `/page/${i + 1}`,
@@ -51,6 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
+    // Create the blog post pages
     posts.forEach((post, index) => {
       const year = moment(post.node.frontmatter.date, "YYYY-MM-DD").format(
         "YYYY"
@@ -69,6 +74,28 @@ exports.createPages = ({ graphql, actions }) => {
           slug: post.node.fields.slug,
           previous,
           next,
+        },
+      })
+    })
+
+    // Create the tag pages
+    let tags = []
+    // Iterate through each post, putting all found tags into `tags`
+    _.each(posts, edge => {
+      if (_.get(edge, "node.frontmatter.tags")) {
+        tags = tags.concat(edge.node.frontmatter.tags)
+      }
+    })
+    // Eliminate duplicate tags
+    tags = _.uniq(tags)
+
+    // Make tag pages
+    tags.forEach(tag => {
+      createPage({
+        path: `/tags/${_.kebabCase(tag)}/`,
+        component: tagTemplate,
+        context: {
+          tag,
         },
       })
     })

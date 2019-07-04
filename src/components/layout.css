@@ -385,6 +385,10 @@ a:hover {
   color: #33609a;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media (min-width: 900px) {
   .main,
   .footer,

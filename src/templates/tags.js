@@ -42,7 +42,9 @@ class Tags extends React.Component {
                 </div>
               )
             })}
-            <Link to="/tags">All tags</Link>
+            <p>
+              <Link to="/tags">All tags</Link>
+            </p>
           </div>
         </section>
       </Layout>

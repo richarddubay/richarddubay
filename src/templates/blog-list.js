@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import kebabCase from "lodash/kebabCase"
 import moment from "moment"
 
 // Component Imports
@@ -32,6 +33,15 @@ class BlogListTemplate extends React.Component {
           const footerDate = moment(node.frontmatter.date, "YYYY-MM-DD").format(
             "MMMM DD, YYYY"
           )
+          const tags = node.frontmatter.tags
+          const tagList = tags.map((tag, index) => {
+            return (
+              <span key={index}>
+                <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                {index === tags.length - 1 ? "" : " / "}
+              </span>
+            )
+          })
           return (
             <div className="article" key={node.fields.slug}>
               <div>
@@ -50,8 +60,9 @@ class BlogListTemplate extends React.Component {
                   }}
                 />
               </div>
-              <footer>
+              <footer className="postFooter">
                 <small>{footerDate}</small>
+                <small className="footerTags">{tagList}</small>
               </footer>
             </div>
           )
@@ -98,6 +109,7 @@ export const blogListTemplateQuery = graphql`
             date(formatString: "YYYY/MM/DD")
             title
             description
+            tags
           }
           html
         }

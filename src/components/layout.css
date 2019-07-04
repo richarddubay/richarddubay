@@ -367,6 +367,24 @@ a:hover {
   font-weight: 300;
 }
 
+.main footer.postFooter {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.main footer.postFooter .footerTags {
+  text-align: right;
+}
+
+.footerTags a {
+  color: #dddddd;
+  border-bottom: 1px solid;
+}
+
+.footerTags a:hover {
+  color: #33609a;
+}
+
 @media (min-width: 900px) {
   .main,
   .footer,
@@ -429,6 +447,14 @@ a:hover {
   }
   .main ul {
     padding: 0.5rem 0;
+  }
+  .main footer.postFooter {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .main footer.postFooter .footerTags {
+    text-align: left;
   }
   .pagination ul {
     padding: 0;

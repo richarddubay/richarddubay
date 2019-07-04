@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import kebabCase from "lodash/kebabCase"
 import moment from "moment"
 
 // Component Imports
@@ -28,6 +29,15 @@ class BlogPostTemplate extends React.Component {
     const nextDay = next
       ? moment(next.frontmatter.date, "YYYY-MM-DD").format("DD")
       : null
+    const tags = post.frontmatter.tags
+    const tagList = tags.map((tag, index) => {
+      return (
+        <span key={index}>
+          <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+          {index === tags.length - 1 ? "" : " / "}
+        </span>
+      )
+    })
 
     return (
       <Layout>
@@ -41,8 +51,9 @@ class BlogPostTemplate extends React.Component {
             className="content"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <footer>
+          <footer className="postFooter">
             <small>{post.frontmatter.date}</small>
+            <small className="footerTags">{tagList}</small>
           </footer>
         </div>
         <div className="article pagination">
@@ -102,6 +113,7 @@ export const blogPostTemplateQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }

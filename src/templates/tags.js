@@ -42,8 +42,8 @@ class Tags extends React.Component {
                 </div>
               )
             })}
-            <p>
-              <Link to="/tags">All tags</Link>
+            <p className="allTags">
+              <Link to="/tags">Go to all tags</Link>
             </p>
           </div>
         </section>

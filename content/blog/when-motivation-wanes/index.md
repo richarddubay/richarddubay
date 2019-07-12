@@ -16,11 +16,8 @@ All the “experts” that I’ve read say that if I want to attract a tribe tha
 I love those topics and I truly plan on writing about them more and more as time goes on. But this week I really just have a bunch of questions.
 
 - What do you do when you just don’t have the motivation to write about a particular thing anymore and you have to post something?
-
 - What if the thing that I am most jazzed about right this moment is a trailer for the latest Marvel movie? What if I just posted a link to the trailer and called it a day? Would that be enough?
-
 - What happens when I don’t have anything inspiring or helpful to say?
-
 - Would it be better just to skip the post I said I was going to write rather than post something that might not be along the same vein as the general topics that I want to cover?
 
 These are the questions running through my head today. If you have any feedback or help, I’d love to hear it!

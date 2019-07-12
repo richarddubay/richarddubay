@@ -54,9 +54,7 @@ Go back to your original goals. What were they? We’re going to chop your long 
 Next, you’re going to cut each of your remaining goals down to almost nothing. A month is a pretty long time, but it’s not as long as a year. You can still accomplish something, but if you try to accomplish what you had planned in January you will end up killing yourself. You’ll hate your goals and your lack of progress. You’ll probably end up hating yourself. I don’t want you to do that.
 
 - Take your 50 pound weight loss goal and cut that down to 5 pounds. Or even 2. What an awesome result to say that you made it through the holidays without gaining any weight or even losing some!
-
 - You wanted to write a book. That might not have happened, but you can write 2 or 3 blog posts. Get started by writing 100 words every day. That might not seem like much, but at the end of the month you’ll have written over 3000 words. That’s enough for 6 blog posts!
-
 - You were going to start your own business. Spend some time researching what it will take to make that happen. You’ve set yourself up for success when you turn in your new business paperwork right after the new year!
 
 Lastly, you’ve got to write your new goal down. In the midst of all the holiday festivities that are about to encroach on your life, give yourself the best possible chance of success by writing down when, where, and what you’ll be working on. If you don’t write it down and give yourself a set time and place to work on it, it will never happen. Write it down on your calendar. Put this somewhere you’ll see it every day. Writing it down is imperative to your success.

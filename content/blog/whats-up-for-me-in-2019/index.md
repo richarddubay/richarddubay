@@ -55,15 +55,10 @@ This is the main overarching goal of many small goals I have with my writing thi
 I want to go ahead and list out a few of my smaller goals under this larger goal just so that you can see what we’re cooking up. This is going to be a big year, friends.
 
 - “I will write and publish 1 blog post per week”
-
 - “I will guest post in other places at least 6 times this year”
-
 - “I will start an email newsletter by the end of Q1”
-
 - “I will write two ebooks this year”
-
 - “I will create and launch a 5-day email course this year”
-
 - “I will write a book this year”
 
 “Okay, what? Did he just say he’s going to write a book?”

@@ -30,7 +30,5 @@ But if I choose to believe the truth about me and what I’m doing, then I have 
 I want to encourage you. Even on your worst days, when everything seems to go wrong, remember:
 
 - Life is hard and no one is perfect.
-
 - Your success in life isn’t dependent on your performance today. It’s determined by showing up day after day and giving it a shot.
-
 - You are loved and cared for by someone beyond what you can believe right now. Keep going.

@@ -65,17 +65,17 @@ Your purpose is your guide. Your North Star. Your compass. Point the things that
 
 Just a couple of small tidbits of wisdom regarding missions and then we’ll be on our way.
 
-- You will have more than one mission at a time. Your marriage is a mission. Your job is a mission. Your side hustle is a mission. Your finances, your health, your parenting. These are all missions.
+**You will have more than one mission at a time.** Your marriage is a mission. Your job is a mission. Your side hustle is a mission. Your finances, your health, your parenting. These are all missions.
 
-- You don’t have to write down mission statements for everything you do. I don’t have them all written down somewhere, although I’m thinking I should. Much like goals for me, if I don’t write them down they tend to get forgotten. If I truly want my money to be used in a mission, with intention and direction, then it might do me well to write down how my money should be used, you know?
+**You don’t have to write down mission statements for everything you do.** I don’t have them all written down somewhere, although I’m thinking I should. Much like goals for me, if I don’t write them down they tend to get forgotten. If I truly want my money to be used in a mission, with intention and direction, then it might do me well to write down how my money should be used, you know?
 
-- Your missions will probably change over time. Just like you might have many jobs over the course of your life, you will probably have many missions. As your passions change, so too should your missions.
+**Your missions will probably change over time.** Just like you might have many jobs over the course of your life, you will probably have many missions. As your passions change, so too should your missions.
 
-- Your missions don’t have to be a one-to-one correlation with your purpose. There are many people whose purpose is to be an evangelist of the Gospel of Jesus, but that doesn’t mean that they necessarily have to work in full-time ministry. They could work in hockey. They could be writers or cosplayers. They could be plumbers. The connection back to their purpose can be more indirect than having to work in full-time ministry to fulfill that calling. There are many things you’ll end up doing that can fulfill your purpose.
+**Your missions don’t have to be a one-to-one correlation with your purpose.** There are many people whose purpose is to be an evangelist of the Gospel of Jesus, but that doesn’t mean that they necessarily have to work in full-time ministry. They could work in hockey. They could be writers or cosplayers. They could be plumbers. The connection back to their purpose can be more indirect than having to work in full-time ministry to fulfill that calling. There are many things you’ll end up doing that can fulfill your purpose.
 
-- Some of your missions are only meant for a season. Others will last your entire life. A job might just be for a season, but your responsibility to your family or your marriage should last for a life time.
+**Some of your missions are only meant for a season.** Others will last your entire life. A job might just be for a season, but your responsibility to your family or your marriage should last for a life time.
 
-- Knowing when it’s time to let a mission die is crucial. When you stick around too long doing something that you are no longer meant to do and you’re only there because it’s comfortable and familiar, then it’s time to move on. If you no longer are growing or finding life there, then you’re just taking up the space that is meant for someone else to fill. You’re hampering blessings meant for someone else in that space and for you elsewhere.
+**Knowing when it’s time to let a mission die is crucial.** When you stick around too long doing something that you are no longer meant to do and you’re only there because it’s comfortable and familiar, then it’s time to move on. If you no longer are growing or finding life there, then you’re just taking up the space that is meant for someone else to fill. You’re hampering blessings meant for someone else in that space and for you elsewhere.
 
 If you want a full, “suck out all the marrow” kind of life, having missions informed by your passions in service of your purpose is how you get there. Remember, to determine your missions, think:
 

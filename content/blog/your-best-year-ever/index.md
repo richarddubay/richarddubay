@@ -56,13 +56,9 @@ The problem isn’t that these statements aren’t worthy of being true. Being a
 One method of goal setting that I’m particularly fond of says that goals should be S.M.A.R.T. These kinds of goals are:
 
 - Specific: What exactly do you want to achieve?
-
 - Measurable: How can you track this?
-
 - Achievable: Is this something you can actually accomplish?
-
 - Relevant: Does this goal make sense for you in your life right now?
-
 - Time-Bound: What’s the deadline?
 
 There is such a big difference between saying “I want to lose weight” and “I want to lose 5 pounds per month for the next 12 months by eating healthy meals and working out 6 days per week.” The former is a dream. The latter is a plan of action.

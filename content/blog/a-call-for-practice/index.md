@@ -2,7 +2,8 @@
 title: "A Call for Practice"
 date: "2019-03-22"
 description: "If you want to be world-class at anything it all starts with practice."
-tags: ["article", "practice"]
+tags: ["practice"]
+category: "article"
 ---
 
 I write and publish a blog post every week. This, in fact, is one of them. The other big thing that I am doing this year is writing a book.

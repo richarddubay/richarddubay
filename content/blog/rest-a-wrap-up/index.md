@@ -2,7 +2,8 @@
 title: "Rest: A Wrap Up"
 date: "2019-06-28"
 description: "Let's finish up our discussion about rest."
-tags: ["article", "rest"]
+tags: ["rest"]
+category: "article"
 ---
 
 > “Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls. For my yoke is easy and my burden is light.”

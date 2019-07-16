@@ -2,7 +2,8 @@
 title: "Give Thanks"
 date: "2018-11-23"
 description: "Take the time to slow down and remember. This is a call to gratitude."
-tags: ["article", "gratitude"]
+tags: ["gratitude"]
+category: "article"
 ---
 
 I want to start out by saying that I love Christmas. It is, by far, my favorite holiday of the year. My primary love language is gifts, so when I see packages, boxes, or bags under our Christmas tree with my name on them, I feel loved and cared for.

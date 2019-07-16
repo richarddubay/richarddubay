@@ -2,7 +2,8 @@
 title: "The Thrill of Hope"
 date: "2018-12-21"
 description: "The same love that came at Christmas will one day come again and renew all things."
-tags: ["article", "christmas", "hope"]
+tags: ["christmas", "hope"]
+category: "article"
 ---
 
 I sit down to write and I just stare at the screen, or out the window.

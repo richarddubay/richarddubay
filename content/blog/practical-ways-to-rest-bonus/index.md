@@ -2,7 +2,8 @@
 title: "Practical Ways to Rest - The Bonus Episode"
 date: "2019-06-14"
 description: "The one about sleep."
-tags: ["article", "rest"]
+tags: ["rest"]
+category: "article"
 ---
 
 Thanks for coming back! As I mentioned last week, we’re going to cover a special bonus way to rest today. If you missed any of the other posts in this series, please start by catching up with the links below. You could probably read this post on it’s own, but it will make so much more sense in the context of all the other ones.

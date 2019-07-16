@@ -2,7 +2,8 @@
 title: "What Makes You Come Alive?"
 date: "2018-12-07"
 description: "Finding the life that we’ve pushed down for decades is not easy work."
-tags: ["article", "life"]
+tags: ["life"]
+category: "article"
 ---
 
 > “Don’t ask what the world needs. Ask what makes you come alive, and go do it. Because what the world needs is people who have come alive.”

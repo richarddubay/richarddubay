@@ -2,7 +2,8 @@
 title: "Practical Ways to Rest #3"
 date: "2019-06-07"
 description: "If you really want to find rest, sabbaticals might be the answer."
-tags: ["article", "rest"]
+tags: ["rest"]
+category: "article"
 ---
 
 It’s great to see you all today! We’ve reached the third way in which we can pay back our energy debt. I think you’ll see from today’s topic that this will be the one that has the most potential to take us over the hump from energy debt into energy surplus.

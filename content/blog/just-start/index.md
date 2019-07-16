@@ -2,7 +2,8 @@
 title: "Just Start"
 date: "2018-08-31"
 description: "Most people do nothing and then wonder why things never change. You can be different."
-tags: ["article", "life", "motivation"]
+tags: ["life", "motivation"]
+category: "article"
 ---
 
 You know how you lose? It’s really simple. All you have to do is just freaking sit there and do nothing. Forever.

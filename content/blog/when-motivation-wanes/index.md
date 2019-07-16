@@ -2,7 +2,8 @@
 title: "When Motivation Wanes"
 date: "2019-03-15"
 description: "What do you do when you just aren’t feeling it?"
-tags: ["article", "motivation"]
+tags: ["motivation"]
+category: "article"
 ---
 
 Have you ever had one of those weeks where you’re just not feeling it? Motivation has vanished and it’s hard to get anything moving? That was my week this week. I struggled with feeling rested. I struggled to find joy in what I was doing. It was just a hard week.

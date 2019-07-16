@@ -2,7 +2,8 @@
 title: "What is Rest?"
 date: "2019-04-19"
 description: "If we’ve gotten rest so wrong, what exactly is it?"
-tags: ["article", "rest"]
+tags: ["rest"]
+category: "article"
 ---
 
 First, let’s start with a confession:

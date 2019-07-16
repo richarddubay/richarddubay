@@ -2,7 +2,8 @@
 title: "Hello World"
 date: "2019-04-26"
 description: "Let's start again with something new"
-tags: ["article", "tech"]
+tags: ["tech"]
+category: "article"
 ---
 
 This is my website. There are many like it but this one is mine.

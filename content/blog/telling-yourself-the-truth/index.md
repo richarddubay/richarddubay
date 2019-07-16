@@ -2,7 +2,8 @@
 title: "Telling Yourself the Truth"
 date: "2018-10-12"
 description: "What you believe about yourself when you fail makes all the difference."
-tags: ["article", "failure", "truth"]
+tags: ["failure", "truth"]
+category: "article"
 ---
 
 I’m completely set up to be successful in my writing endeavor this morning.

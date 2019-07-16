@@ -2,7 +2,8 @@
 title: "Finishing Well"
 date: "2018-11-30"
 description: "How you finish determines how you start. Finish well."
-tags: ["article", "life", "new year"]
+tags: ["life", "new year"]
+category: "article"
 ---
 
 I’ll admit there are very few things in this world that I personally feel like I do well but one of those things is planning.

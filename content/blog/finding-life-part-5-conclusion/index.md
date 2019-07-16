@@ -2,7 +2,8 @@
 title: "Finding Life, Part 5: Conclusion"
 date: "2019-02-08"
 description: "Discover your passions. Put them to use in a mission. Find your true purpose. Live a life of freedom. These are all available to you."
-tags: ["article", "life"]
+tags: ["life"]
+category: "article"
 ---
 
 Welcome back! Today we’re wrapping up a series about discovering your path to a life of passion, mission, purpose, and freedom. The previous posts can be found here:

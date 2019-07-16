@@ -2,7 +2,8 @@
 title: "Pavlov All Over Again"
 date: "2019-03-29"
 description: "As soon as she hears the stick begin to pound on the stage she begins to cry."
-tags: ["article", "life", "pavlov"]
+tags: ["life", "pavlov"]
+category: "article"
 ---
 
 > As soon as she hears the stick begin to pound on the stage she begins to cry.

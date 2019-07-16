@@ -2,7 +2,8 @@
 title: "A Glorious Disruption"
 date: "2018-09-21"
 description: "In our efforts to be and do more, maybe God has something else in mind."
-tags: ["article", "love"]
+tags: ["love"]
+category: "article"
 ---
 
 God loves me. I know because He’s told me so.

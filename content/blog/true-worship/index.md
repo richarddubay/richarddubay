@@ -2,7 +2,8 @@
 title: "True Worship"
 date: "2019-07-12"
 description: "What is worship anyway?"
-tags: ["article", "worship"]
+tags: ["worship"]
+category: "article"
 ---
 
 > The Lord says: “These people come near me with their mouth and honor me with their lips, but their hearts are far from me. Their worship of me is based on merely human rules they have been taught.”

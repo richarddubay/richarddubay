@@ -2,7 +2,8 @@
 title: "iPhone Xs: My Thoughts So Far"
 date: "2018-11-16"
 description: "A short review"
-tags: ["article", "tech"]
+tags: ["tech"]
+category: "article"
 ---
 
 Do you remember when Steve Jobs introduced the original iPhone? I do. It was such an exciting time to be a part of the technological world. New innovations. Pushing the bar forward on the cell phone world. I mean, the best phone I had owned up until that point was a Motorola RAZR. Remember those?

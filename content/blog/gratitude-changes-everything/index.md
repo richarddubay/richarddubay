@@ -2,7 +2,8 @@
 title: "Gratitude Changes Everything"
 date: "2018-08-17"
 description: "When you make time to be grateful your heart can breathe again."
-tags: ["article", "gratitude"]
+tags: ["gratitude"]
+category: "article"
 ---
 
 Every day on my way to and from work I drive on a bridge over a lake. It’s not the shortest way to get to where I need to go. It’s actually kind of out of the way if I’m being honest.

@@ -2,7 +2,8 @@
 title: "You Are More Than What You Do"
 date: "2019-04-05"
 description: "Have you ever been overwhelmed?"
-tags: ["article", "overwhelm"]
+tags: ["overwhelm"]
+category: "article"
 ---
 
 Have you ever been overwhelmed?

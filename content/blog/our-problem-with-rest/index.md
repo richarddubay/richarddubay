@@ -2,7 +2,8 @@
 title: "Our Problem with Rest"
 date: "2019-04-12"
 description: "We’ve gotten rest all wrong."
-tags: ["article", "rest"]
+tags: ["rest"]
+category: "article"
 ---
 
 I’ve been thinking a lot about rest lately.

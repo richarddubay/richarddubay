@@ -2,7 +2,8 @@
 title: "Finding Life, Part 3: Your Purpose"
 date: "2019-01-25"
 description: "You were made on purpose with a purpose."
-tags: ["article", "life", "purpose"]
+tags: ["life", "purpose"]
+category: "article"
 ---
 
 Welcome back! We’re in the middle of a series about discovering your path to a life of passion, mission, purpose, and freedom. The previous posts can be found here:

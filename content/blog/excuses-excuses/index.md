@@ -2,10 +2,11 @@
 title: "Excuses, Excuses"
 date: "2019-07-05"
 description: "Excuses are poison and we make a lot of excuses."
-tags: ["article", "excuses"]
+tags: ["excuses"]
+category: "article"
 ---
 
-![Excuses Excuses](excuses.jpg)_Photo by [Drew Beamer](https://unsplash.com/@drew\_beamer) on [Unsplash](https://unsplash.com/collections/2324987/no-excuses)_
+![Excuses Excuses](excuses.jpg)_Photo by [Drew Beamer](https://unsplash.com/@drew_beamer) on [Unsplash](https://unsplash.com/collections/2324987/no-excuses)_
 
 This was supposed to be a mid-year recap but I honestly don’t have much to share. I haven’t really made progress on any of the goals that I set for myself at the beginning of the year. It’s not that I don’t want to. Far from it. I wouldn’t have made the goals I did if I didn’t want to achieve them. I _really do_ want them to come to fruition.
 

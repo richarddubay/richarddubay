@@ -2,7 +2,8 @@
 title: "Embrace the Slow"
 date: "2019-02-15"
 description: "Embrace the slow. Love the process. Enjoy the mistakes. Revel in the anonymity."
-tags: ["article", "life", "process"]
+tags: ["life", "process"]
+category: "article"
 ---
 
 I am a horrifically slow writer. I agonize over words. Which word would be better here? How many times did I use the word “that” and can I remove most of them? Is it “affect” or “effect”? I quite literally hate spelling mistakes and I go back and fix them all immediately even though I know that while writing I’m supposed to let all of that go, just write, and edit later.

@@ -68,7 +68,7 @@ The very first official piece for this blog was posted on August 17, 2018. It is
 
 Since then I’ve posted 50 other posts (for a total of 51 - including this post). I only took off one week early on when I thought I would not post on the weeks that I had my sabbatical week. Since then I’ve learned that I can write early and still post something even when I’m not officially working on stuff. Also, that **_consistency is key_**. These were big revelations.
 
-Over the course of the year I have published 46,030 words for a 920.6 word average per post. That’s the equivalent of a 184 page book! Week by week it doesn’t seem like a lot, but they definitely add up over time. Also, if I _published_ that many words, how many words do you think I actually wrote before editing? Haha … so many words!
+Over the course of the year I have published 47,879 words for a 938.8 word average per post. That’s the equivalent of a 192 page book! Week by week it doesn’t seem like a lot, but they definitely add up over time. Also, if I /published/ that many words, how many words do you think I actually wrote before editing? Haha … so many words!
 
 The biggest thing of this year happened on April 26, 2019. On that day I published a piece called “[Hello World](https://www.richarddubay.com/2019/04/26/hello-world/)” in which introduced all of you to my new website. That was a giant day for me. I had wanted a home of my own where I could post what I wanted to, when I wanted to and I finally had one. I love it. I hope you do too!
 

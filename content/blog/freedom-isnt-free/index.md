@@ -6,7 +6,7 @@ tags: ["freedom"]
 category: "article"
 ---
 
-World War II. Free nations come to the aid of those whose freedom has been taken away by force. Millions of men and woman fought and died to turn back the hand of those who would seek to oppress and control the world.
+It's World War II. Free nations come to the aid of those whose freedom has been taken away by force. Millions of men and woman fought and died to turn back the hand of those who would seek to oppress and control the world.
 
 But freedom is restored.
 

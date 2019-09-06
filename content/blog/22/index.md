@@ -32,8 +32,8 @@ Heather, I love you more now than I did then. You are everything a guy could hop
 
 An anniversary haiku and then I’m done.
 
-> Happy Anniversary
->
 > Twenty-two years old
+>
+> Happy Anniversary
 >
 > Let’s go eat tacos

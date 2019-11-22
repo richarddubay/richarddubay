@@ -141,6 +141,10 @@ module.exports = {
             family: "Roboto Condensed",
             variants: ["400", "700"],
           },
+          {
+            family: "Inconsolata",
+            variants: ["400"],
+          },
         ],
       },
     },

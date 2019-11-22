@@ -8,11 +8,11 @@ module.exports = {
     siteUrl: "https://www.richarddubay.com/",
     social: {
       facebook: {
-        shareImage: "facebook-share-image.png",
+        shareImage: "/facebook-share-image.png",
       },
       twitter: {
         profileName: "@richarddubay",
-        shareImage: "twitter-share-image.png",
+        shareImage: "/twitter-share-image.png",
       },
     },
   },

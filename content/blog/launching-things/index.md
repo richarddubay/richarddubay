@@ -46,7 +46,3 @@ That’s how I feel about what we’re building with this new app. It’s specia
 This app has a purpose. It was created with each of you in mind. I’m so excited that it will be in your hands soon. I seriously can’t wait. I guess you could say I’m “pregnant with anticipation.” It’s Christmas morning and you just know there is a gift under the tree that you’ve been waiting for forever. It’s right there. Thanksgiving dinner is right around the corner. I can almost taste it.
 
 My prayer and expectation for the app is that you use it, and that through it Jesus would change your life.
-
-```
-
-```

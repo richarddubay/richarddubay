@@ -40,15 +40,6 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
   const facebookMetaImage =
     image || site.siteMetadata.social.facebook.shareImage
   const twitterMetaImage = image || site.siteMetadata.social.twitter.shareImage
-  console.log("siteUrl = ", site.siteMetadata.siteUrl)
-  console.log(
-    "facebook share image = ",
-    site.siteMetadata.social.facebook.shareImage
-  )
-  console.log(
-    "this dumb thing = ",
-    `${site.siteMetadata.siteUrl}${facebookMetaImage}`
-  )
 
   return (
     <Helmet

@@ -2,7 +2,7 @@
 title: "The Fear of the New"
 date: "2020-01-31"
 description: "Anytime we start something new, it's always there trying to stop us."
-tags: ["fear", "new"]
+tags: ["fear", "new", "mindset"]
 category: "article"
 ---
 

@@ -2,7 +2,7 @@
 title: "I Didn’t Drink Any Caffeine This Week … and Here’s What Happened"
 date: "2020-01-24"
 description: "What does it look like to live without caffeine?"
-tags: ["health", "life", "caffeine"]
+tags: ["goals", "health", "life", "caffeine"]
 category: "article"
 ---
 

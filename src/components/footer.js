@@ -1,5 +1,5 @@
-import React from "react"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 function Footer() {
   return (
@@ -7,8 +7,8 @@ function Footer() {
       <ul>
         <li>
           <p>
-            © 2018-{new Date().getFullYear()} | Built with{" "}
-            <OutboundLink href="https://www.gatsbyjs.org">Gatsby</OutboundLink>{" "}
+            © 2018-{new Date().getFullYear()} | Built with{' '}
+            <OutboundLink href="https://www.gatsbyjs.org">Gatsby</OutboundLink>{' '}
             and <span className="heart">&lt;3</span> in South Carolina
           </p>
         </li>
@@ -34,7 +34,7 @@ function Footer() {
         </li>
       </ul>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

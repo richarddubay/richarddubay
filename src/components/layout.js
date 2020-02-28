@@ -1,11 +1,11 @@
-import React from "react"
-import "./layout.css"
-import Footer from "./footer"
-import Header from "./header"
+import React from 'react';
+import './layout.css';
+import Footer from './footer';
+import Header from './header';
 
 class Layout extends React.Component {
   render() {
-    const { children } = this.props
+    const { children } = this.props;
 
     return (
       <div className="layout">
@@ -17,8 +17,8 @@ class Layout extends React.Component {
           <Footer />
         </footer>
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;

@@ -1,43 +1,43 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import kebabCase from "lodash/kebabCase"
-import moment from "moment"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import kebabCase from 'lodash/kebabCase';
+import moment from 'moment';
 
 // Component Imports
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const { previous, next } = this.props.pageContext
+    const post = this.props.data.markdownRemark;
+    const { previous, next } = this.props.pageContext;
     const previousYear = previous
-      ? moment(previous.frontmatter.date, "YYYY-MM-DD").format("YYYY")
-      : null
+      ? moment(previous.frontmatter.date, 'YYYY-MM-DD').format('YYYY')
+      : null;
     const previousMonth = previous
-      ? moment(previous.frontmatter.date, "YYYY-MM-DD").format("MM")
-      : null
+      ? moment(previous.frontmatter.date, 'YYYY-MM-DD').format('MM')
+      : null;
     const previousDay = previous
-      ? moment(previous.frontmatter.date, "YYYY-MM-DD").format("DD")
-      : null
+      ? moment(previous.frontmatter.date, 'YYYY-MM-DD').format('DD')
+      : null;
     const nextYear = next
-      ? moment(next.frontmatter.date, "YYYY-MM-DD").format("YYYY")
-      : null
+      ? moment(next.frontmatter.date, 'YYYY-MM-DD').format('YYYY')
+      : null;
     const nextMonth = next
-      ? moment(next.frontmatter.date, "YYYY-MM-DD").format("MM")
-      : null
+      ? moment(next.frontmatter.date, 'YYYY-MM-DD').format('MM')
+      : null;
     const nextDay = next
-      ? moment(next.frontmatter.date, "YYYY-MM-DD").format("DD")
-      : null
-    const tags = post.frontmatter.tags
+      ? moment(next.frontmatter.date, 'YYYY-MM-DD').format('DD')
+      : null;
+    const tags = post.frontmatter.tags;
     const tagList = tags.map((tag, index) => {
       return (
         <span key={index}>
           <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-          {index === tags.length - 1 ? "" : " / "}
+          {index === tags.length - 1 ? '' : ' / '}
         </span>
-      )
-    })
+      );
+    });
 
     return (
       <Layout>
@@ -62,11 +62,11 @@ class BlogPostTemplate extends React.Component {
               {previous && (
                 <Link
                   to={
-                    "/" +
+                    '/' +
                     previousYear +
-                    "/" +
+                    '/' +
                     previousMonth +
-                    "/" +
+                    '/' +
                     previousDay +
                     previous.fields.slug
                   }
@@ -80,11 +80,11 @@ class BlogPostTemplate extends React.Component {
               {next && (
                 <Link
                   to={
-                    "/" +
+                    '/' +
                     nextYear +
-                    "/" +
+                    '/' +
                     nextMonth +
-                    "/" +
+                    '/' +
                     nextDay +
                     next.fields.slug
                   }
@@ -97,11 +97,11 @@ class BlogPostTemplate extends React.Component {
           </ul>
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const blogPostTemplateQuery = graphql`
   query BlogPostTemplate($slug: String!) {
@@ -117,4 +117,4 @@ export const blogPostTemplateQuery = graphql`
       }
     }
   }
-`
+`;

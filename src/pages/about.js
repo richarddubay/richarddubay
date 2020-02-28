@@ -1,18 +1,18 @@
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import Image from "gatsby-image"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import React from 'react';
+import { graphql, StaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 // Component Imports
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 class AboutPage extends React.Component {
   render() {
     return (
       <StaticQuery
         query={aboutPageQuery}
-        render={data => {
+        render={(data) => {
           return (
             <Layout>
               <SEO title="About" />
@@ -23,20 +23,20 @@ class AboutPage extends React.Component {
                     My name is Rich Dubay. I am a Christ follower, husband,
                     father, and nerd. I’m originally from Michigan but I’ve
                     lived for over 20 years in the South. I currently live in
-                    Anderson, South Carolina where I root for the{" "}
+                    Anderson, South Carolina where I root for the{' '}
                     <OutboundLink href="https://mgoblue.com/index.aspx?path=football">
                       Michigan Wolverines
                     </OutboundLink>
-                    ,{" "}
+                    ,{' '}
                     <OutboundLink href="https://www.nhl.com/redwings">
                       Detroit Red Wings
                     </OutboundLink>
-                    , and{" "}
+                    , and{' '}
                     <OutboundLink href="https://www.49ers.com/">
                       San Francisco 49ers
                     </OutboundLink>
-                    . Oh yeah, my favorite sports teams are <em>very</em>{" "}
-                    popular here.{" "}
+                    . Oh yeah, my favorite sports teams are <em>very</em>{' '}
+                    popular here.{' '}
                     <span role="img" aria-label="joy">
                       😂
                     </span>
@@ -49,10 +49,10 @@ class AboutPage extends React.Component {
                         Seattle.
                       </em>
                     </div>
-                  </div>{" "}
+                  </div>{' '}
                   <h2>What I Do</h2>
                   <p>
-                    I work in full-time ministry as a software engineer at{" "}
+                    I work in full-time ministry as a software engineer at{' '}
                     <OutboundLink href="https://newspring.cc/">
                       NewSpring Church
                     </OutboundLink>
@@ -68,7 +68,7 @@ class AboutPage extends React.Component {
                     sundry things.
                   </p>
                   <p>
-                    I’ve also started working on a book.{" "}
+                    I’ve also started working on a book.{' '}
                     <span role="img" aria-label="grimace">
                       😬
                     </span>
@@ -84,35 +84,35 @@ class AboutPage extends React.Component {
                   <h2>How I Do It</h2>
                   <p>
                     I am using a pretty legit 13-inch MacBook Pro (circa 2018).
-                    My writing currently happens in{" "}
+                    My writing currently happens in{' '}
                     <OutboundLink href="http://www.bear-writer.com/">
                       Bear
-                    </OutboundLink>{" "}
-                    although I am toying with the idea of moving to{" "}
+                    </OutboundLink>{' '}
+                    although I am toying with the idea of moving to{' '}
                     <OutboundLink href="https://ulysses.app/">
                       Ulysses
                     </OutboundLink>
-                    . I’ve also recently started using{" "}
+                    . I’ve also recently started using{' '}
                     <OutboundLink href="https://culturedcode.com/things/">
                       Things
-                    </OutboundLink>{" "}
+                    </OutboundLink>{' '}
                     to keep everything together and finished as close as
-                    possible to on-time. This site is built with{" "}
+                    possible to on-time. This site is built with{' '}
                     <OutboundLink href="https://www.gatsbyjs.org/">
                       Gatsby
-                    </OutboundLink>{" "}
-                    and edited with{" "}
+                    </OutboundLink>{' '}
+                    and edited with{' '}
                     <OutboundLink href="https://atom.io/">Atom</OutboundLink>.
-                    Before this, my site was built using{" "}
+                    Before this, my site was built using{' '}
                     <OutboundLink href="https://reactjs.org/">
                       React
-                    </OutboundLink>{" "}
-                    and <em>before that</em> I used{" "}
+                    </OutboundLink>{' '}
+                    and <em>before that</em> I used{' '}
                     <OutboundLink href="https://panic.com/coda/">
                       Coda
-                    </OutboundLink>{" "}
+                    </OutboundLink>{' '}
                     and straight up HTML and CSS (which I still use for a lot of
-                    things). The site is powered by{" "}
+                    things). The site is powered by{' '}
                     <OutboundLink href="https://www.netlify.com/">
                       Netlify
                     </OutboundLink>
@@ -120,23 +120,23 @@ class AboutPage extends React.Component {
                   </p>
                   <h2>Other Things</h2>
                   <p>
-                    I love pretty much any gadget that{" "}
+                    I love pretty much any gadget that{' '}
                     <OutboundLink href="https://www.apple.com/">
                       Apple
-                    </OutboundLink>{" "}
+                    </OutboundLink>{' '}
                     makes, and I have a fond affection for seeing the workspaces
-                    of others. I like modern design, old-school hip-hop, and{" "}
+                    of others. I like modern design, old-school hip-hop, and{' '}
                     <OutboundLink href="http://dayoneapp.com/">
                       beautifully
-                    </OutboundLink>{" "}
+                    </OutboundLink>{' '}
                     <OutboundLink href="https://tapbots.com/tweetbot/">
                       designed
-                    </OutboundLink>{" "}
+                    </OutboundLink>{' '}
                     <OutboundLink href="https://culturedcode.com/things/">
                       software
                     </OutboundLink>
                     . I also feel like I’m becoming more of a nerd as I get
-                    older. I am on the board of directors at the{" "}
+                    older. I am on the board of directors at the{' '}
                     <OutboundLink href="http://clemsonlittletheatre.com/">
                       Clemson Little Theatre
                     </OutboundLink>
@@ -147,23 +147,23 @@ class AboutPage extends React.Component {
                   </p>
                   <h2>Places You Can Find Me</h2>
                   <p>
-                    I’m available in all the normal places.{" "}
+                    I’m available in all the normal places.{' '}
                     <OutboundLink href="https://www.facebook.com/richarddubay">
                       Facebook
                     </OutboundLink>
-                    ,{" "}
+                    ,{' '}
                     <OutboundLink href="https://www.instagram.com/richarddubay/">
                       Instagram
                     </OutboundLink>
-                    ,{" "}
+                    ,{' '}
                     <OutboundLink href="https://twitter.com/richarddubay">
                       Twitter
                     </OutboundLink>
-                    , and by{" "}
+                    , and by{' '}
                     <OutboundLink href="mailto:rich@richarddubay.com">
                       email
                     </OutboundLink>
-                    . For the developers in the group, I can also be found on{" "}
+                    . For the developers in the group, I can also be found on{' '}
                     <OutboundLink href="https://github.com/richarddubay">
                       Github
                     </OutboundLink>
@@ -174,14 +174,14 @@ class AboutPage extends React.Component {
                 </div>
               </section>
             </Layout>
-          )
+          );
         }}
       />
-    )
+    );
   }
 }
 
-export default AboutPage
+export default AboutPage;
 
 export const aboutPageQuery = graphql`
   query AboutPage {
@@ -193,4 +193,4 @@ export const aboutPageQuery = graphql`
       }
     }
   }
-`
+`;

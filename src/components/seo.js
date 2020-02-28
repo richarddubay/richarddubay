@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
   const { site } = useStaticQuery(
@@ -34,12 +34,12 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
   const facebookMetaImage =
-    image || site.siteMetadata.social.facebook.shareImage
-  const twitterMetaImage = image || site.siteMetadata.social.twitter.shareImage
+    image || site.siteMetadata.social.facebook.shareImage;
+  const twitterMetaImage = image || site.siteMetadata.social.twitter.shareImage;
 
   return (
     <Helmet
@@ -51,79 +51,79 @@ function SEO({ description, lang, meta, keywords, title, image, siteUrl }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: "description",
+          name: 'description',
           content: metaDescription,
         },
         {
-          property: "og:title",
+          property: 'og:title',
           content: title,
         },
         {
-          property: "og:description",
+          property: 'og:description',
           content: metaDescription,
         },
         {
-          property: "og:image",
+          property: 'og:image',
           content: `${site.siteMetadata.siteUrl}${facebookMetaImage}`,
         },
         {
-          property: "og:image:width",
-          content: "1700",
+          property: 'og:image:width',
+          content: '1700',
         },
         {
-          property: "og:image:height",
-          content: "630",
+          property: 'og:image:height',
+          content: '630',
         },
         {
-          property: "og:type",
-          content: "website",
+          property: 'og:type',
+          content: 'website',
         },
         {
-          name: "twitter:card",
-          content: "summary_large_image",
+          name: 'twitter:card',
+          content: 'summary_large_image',
         },
         {
-          name: "twitter:creator",
+          name: 'twitter:creator',
           content: site.siteMetadata.author,
         },
         {
-          name: "twitter:title",
+          name: 'twitter:title',
           content: title,
         },
         {
-          name: "twitter:description",
+          name: 'twitter:description',
           content: metaDescription,
         },
         {
-          name: "twitter:image",
+          name: 'twitter:image',
           content: `${site.siteMetadata.siteUrl}${twitterMetaImage}`,
         },
         {
-          name: "twitter:site",
+          name: 'twitter:site',
           content: site.siteMetadata.social.twitter.profileName,
         },
       ]
         .concat(
           keywords.length > 0
             ? {
-                name: "keywords",
-                content: keywords.join(", "),
+                name: 'keywords',
+                content: keywords.join(', '),
               }
             : []
         )
         .concat(meta)}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
-  description: "",
+  description: '',
   keywords: [],
-  lang: "en",
+  lang: 'en',
   meta: [],
-  title: "",
+  title: '',
   image: null,
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
@@ -132,6 +132,6 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   image: PropTypes.string,
-}
+};
 
-export default SEO
+export default SEO;

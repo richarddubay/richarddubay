@@ -1,9 +1,9 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import Image from "gatsby-image"
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import Image from 'gatsby-image';
 
 // Component Imports
-import SEO from "../components/seo"
+import SEO from '../components/seo';
 
 class NotFoundPage extends React.Component {
   render() {
@@ -24,22 +24,22 @@ class NotFoundPage extends React.Component {
         </div>
         <div className="unsplash">
           <p>
-            Photo by{" "}
+            Photo by{' '}
             <a href="https://unsplash.com/@silasbaisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
               Silas Baisch
-            </a>{" "}
-            on{" "}
+            </a>{' '}
+            on{' '}
             <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
               Unsplash
             </a>
           </p>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default NotFoundPage
+export default NotFoundPage;
 
 export const notFoundPageQuery = graphql`
   query NotFoundPage {
@@ -51,4 +51,4 @@ export const notFoundPageQuery = graphql`
       }
     }
   }
-`
+`;

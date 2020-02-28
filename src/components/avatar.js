@@ -1,20 +1,20 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
 function Avatar() {
   return (
     <StaticQuery
       query={avatarQuery}
-      render={data => {
+      render={(data) => {
         return (
           <div>
             <Image fixed={data.avatar.childImageSharp.fixed} />
           </div>
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 const avatarQuery = graphql`
@@ -27,6 +27,6 @@ const avatarQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default Avatar
+export default Avatar;

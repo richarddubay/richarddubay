@@ -12,13 +12,13 @@ html {
 
 a {
   text-decoration: none;
-  color: #4078c0;
+  color: #e90a16;
 }
 
 a:hover {
   text-decoration: none;
   border-bottom: 1px solid;
-  color: #33609a;
+  color: #c80913;
 }
 
 .layout {
@@ -28,6 +28,8 @@ a:hover {
 
 .siteHeader {
   padding: 1.5rem;
+  /* background-color: #f6f6f6; */
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .siteHeader nav {
@@ -48,7 +50,24 @@ a:hover {
 .siteHeader nav ul li a {
   margin: 0 10px;
   box-shadow: none;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.siteHeader nav ul li a:hover {
+  border: none;
+}
+
+.siteHeader nav ul li a.button {
+  color: #ffffff;
+  background-color: #e90a16;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+.siteHeader nav ul li a.button:hover {
+  background-color: #c80913;
 }
 
 .siteHeader nav a.logo {
@@ -83,6 +102,22 @@ a:hover {
 
 .siteHeader a.logo .wordmark {
   color: #444;
+}
+
+.middle {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 7.5vw 85vw 7.5vw;
+}
+
+.middle h1 {
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  grid-column: 2/3;
 }
 
 .main {
@@ -390,16 +425,6 @@ img {
   max-width: 100%;
 }
 
-/* .gatsby-highlight-code-line {
-  background-color: #feb;
-  display: block;
-  margin-right: -1em;
-  margin-left: -1em;
-  padding-right: 1em;
-  padding-left: 0.75em;
-  border-left: 0.25em solid #f99;
-} */
-
 .gatsby-highlight {
   background-color: #f0f0f0;
   border-radius: 0.3em;
@@ -410,6 +435,7 @@ img {
 }
 
 @media (min-width: 900px) {
+  .middle,
   .main,
   .footer,
   .about,
@@ -417,9 +443,17 @@ img {
   .tags {
     grid-template-columns: 20vw 60vw 20vw;
   }
+
+  .middle {
+    padding: 3rem 0;
+  }
 }
 
 @media (max-width: 768px) {
+  .middle {
+    padding: 2rem 0;
+  }
+  .middle h1,
   .main h1 {
     font-size: 2.25rem;
   }
@@ -455,6 +489,7 @@ img {
   .siteHeader .wordmark {
     padding-left: 0.5rem;
   }
+  .middle h1,
   .main h1 {
     font-size: 1.5rem;
   }
@@ -509,9 +544,13 @@ img {
     display: block;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     .siteHeader a.logo .wordmark {
       display: none;
+    }
+
+    .siteHeader nav ul li a.button {
+      padding: 10px 15px;
     }
   }
 }

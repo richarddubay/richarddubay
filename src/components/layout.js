@@ -7,7 +7,8 @@ import Header from './header';
 
 class Layout extends React.Component {
   render() {
-    const { children } = this.props;
+    const { children, bar } = this.props;
+    console.log('bar = ', bar);
 
     return (
       <StaticQuery
@@ -17,9 +18,7 @@ class Layout extends React.Component {
             <header className="siteHeader">
               <Header />
             </header>
-            <div className="middle">
-              <h1>A guy with some words bringing hope to the internet</h1>
-            </div>
+            <div>{bar && bar()}</div>
             <main className="main">{children}</main>
             <footer className="footer">
               <Footer />

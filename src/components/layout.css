@@ -434,15 +434,21 @@ img {
   font-family: 'Inconsolata', serif;
 }
 
-@media (min-width: 900px) {
-  .middle,
+@media (max-width: 1440px) {
+  .middle {
+    grid-template-columns: 7.5vw 60vw 32.5vw;
+  }
+}
+
+@media (max-width: 900px) {
+  /* .middle,
   .main,
   .footer,
   .about,
   .archives,
   .tags {
     grid-template-columns: 20vw 60vw 20vw;
-  }
+  } */
 
   .middle {
     padding: 3rem 0;
@@ -452,6 +458,7 @@ img {
 @media (max-width: 768px) {
   .middle {
     padding: 2rem 0;
+    grid-template-columns: 7.5vw 85vw 7.5vw;
   }
   .middle h1,
   .main h1 {

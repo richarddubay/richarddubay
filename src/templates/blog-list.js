@@ -16,78 +16,90 @@ class BlogListTemplate extends React.Component {
     const prevPage =
       currentPage - 1 === 1 ? '/' : '/page/' + (currentPage - 1).toString();
     const nextPage = '/page/' + (currentPage + 1).toString();
+    const bar = () => (
+      <div className="middle">
+        <h1>A guy with some words attempting to bring hope to the internet</h1>
+      </div>
+    );
 
     return (
-      <Layout>
-        <SEO
-          title="Home"
-          keywords={['blog', 'gatsby', 'javascript', 'react']}
-        />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          const year = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
-            'YYYY'
-          );
-          const month = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
-            'MM'
-          );
-          const day = moment(node.frontmatter.date, 'YYYY-MM-DD').format('DD');
-          const footerDate = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
-            'MMMM DD, YYYY'
-          );
-          const tags = node.frontmatter.tags;
-          const tagList = tags.map((tag, index) => {
-            return (
-              <span key={index}>
-                <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                {index === tags.length - 1 ? '' : ' / '}
-              </span>
+      <>
+        <Layout bar={bar}>
+          <SEO
+            title="Home"
+            keywords={['blog', 'gatsby', 'javascript', 'react']}
+          />
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug;
+            const year = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              'YYYY'
             );
-          });
-          return (
-            <div className="article" key={node.fields.slug}>
-              <div>
-                <h1 className="postTitle">
-                  <Link
-                    style={{ boxShadow: 'none' }}
-                    to={'/' + year + '/' + month + '/' + day + node.fields.slug}
-                  >
-                    {title}
-                  </Link>
-                </h1>
-                <div
-                  className="content"
-                  dangerouslySetInnerHTML={{
-                    __html: node.html,
-                  }}
-                />
+            const month = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              'MM'
+            );
+            const day = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              'DD'
+            );
+            const footerDate = moment(
+              node.frontmatter.date,
+              'YYYY-MM-DD'
+            ).format('MMMM DD, YYYY');
+            const tags = node.frontmatter.tags;
+            const tagList = tags.map((tag, index) => {
+              return (
+                <span key={index}>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  {index === tags.length - 1 ? '' : ' / '}
+                </span>
+              );
+            });
+            return (
+              <div className="article" key={node.fields.slug}>
+                <div>
+                  <h1 className="postTitle">
+                    <Link
+                      style={{ boxShadow: 'none' }}
+                      to={
+                        '/' + year + '/' + month + '/' + day + node.fields.slug
+                      }
+                    >
+                      {title}
+                    </Link>
+                  </h1>
+                  <div
+                    className="content"
+                    dangerouslySetInnerHTML={{
+                      __html: node.html,
+                    }}
+                  />
+                </div>
+                <footer className="postFooter">
+                  <small>{footerDate}</small>
+                  <small className="footerTags">{tagList}</small>
+                </footer>
               </div>
-              <footer className="postFooter">
-                <small>{footerDate}</small>
-                <small className="footerTags">{tagList}</small>
-              </footer>
-            </div>
-          );
-        })}
-        <div className="article pagination">
-          <ul>
-            <li>
-              {!isLast && (
-                <Link to={nextPage} rel="next">
-                  ← Older Posts
-                </Link>
-              )}
-            </li>
-            <li>
-              {!isFirst && (
-                <Link to={prevPage} rel="prev">
-                  Newer Posts →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </div>
-      </Layout>
+            );
+          })}
+          <div className="article pagination">
+            <ul>
+              <li>
+                {!isLast && (
+                  <Link to={nextPage} rel="next">
+                    ← Older Posts
+                  </Link>
+                )}
+              </li>
+              <li>
+                {!isFirst && (
+                  <Link to={prevPage} rel="prev">
+                    Newer Posts →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </div>
+        </Layout>
+      </>
     );
   }
 }

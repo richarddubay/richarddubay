@@ -6,6 +6,9 @@ tags: ["health", "fitness", "identity", "growth"]
 category: "article"
 ---
 
+![LIIFT4 Tracker](LIIFT4_Tracker.jpg)
+*My LIIFT4 Tracking Sheet*
+
 I started playing tennis when I was in 7th grade. I loved it and I was pretty decent at it. When I hit high school I started managing the girls team in the fall, playing on the boys team in the spring, and teaching lessons to other kids in the summer. For 9 months out of the year I played tennis. I was in shape (pretty skinny actually) and I had fun. 
 
 You’d never know it to look at me now. Once I realized I wasn’t going to play in college I gave up that life and started the “eat-whatever-you-want-because-it’s-college” life. I don’t remember what I weighed in high school but the “Freshman 15” was probably more like the “Freshman 30” and it didn’t really stop there. The sedentary life of a college kid who didn’t exercise, only went to class, sat behind a computer, and played video games quickly took hold. And I’ve never looked back much.

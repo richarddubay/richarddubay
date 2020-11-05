@@ -1,7 +1,5 @@
 # Long Live the Personal Site
 
-Hi!
-
 Thanks for stopping by. This is the repo for my personal site. It's powered by [Gatsby](https://www.gatsbyjs.org/) and hosted on [Netlify](https://www.netlify.com/). It is constantly under construction and I hope it's getting better all the time.
 
 ## Why Did I Build This?

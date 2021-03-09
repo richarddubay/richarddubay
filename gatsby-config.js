@@ -129,6 +129,26 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-preload-fonts`,
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Merriweather',
+              variants: ['300', '300i', '400', '400i', '700'],
+            },
+            {
+              family: 'Roboto Condensed',
+              variants: ['400', '700'],
+            },
+            {
+              family: 'Inconsolata',
+              variants: ['400'],
+            },
+          ],
+        },
+      },
+    },
   ],
 };

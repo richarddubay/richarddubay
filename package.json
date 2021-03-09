@@ -44,6 +44,9 @@
     "type": "git",
     "url": "git+https://github.com/richarddubay/richarddubay.git"
   },
+  "engines": {
+    "node": ">=12.13.0"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

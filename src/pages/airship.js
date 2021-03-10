@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 // Component Imports
 import Layout from '../components/layout';
@@ -17,9 +17,7 @@ class Airship extends React.Component {
                         <SEO title="Airship" />
                         <section className="resume">
                             <section className="header">
-                                <Image
-                                    fluid={data.image.childImageSharp.fluid}
-                                />
+                                <GatsbyImage image={data.image.childImageSharp.gatsbyImageData} />
                             </section>
                             <section className="resume-wrapper">
                                 <section className="left">
@@ -99,23 +97,20 @@ class Airship extends React.Component {
                             </section>
                         </section>
                     </Layout>
-                )
+                );
             }}
         />
     );
   }
 }
 
-export const airshipQuery = graphql`
-  query AirshipQuery {
-    image: file(absolutePath: { regex: "/rich-to-airship.png/" }) {
-      childImageSharp {
-        fluid(maxWidth: 900) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const airshipQuery = graphql`query AirshipQuery {
+  image: file(absolutePath: {regex: "/rich-to-airship.png/"}) {
+    childImageSharp {
+      gatsbyImageData(width: 900, layout: CONSTRAINED)
     }
   }
+}
 `;
 
 export default Airship;

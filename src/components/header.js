@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
         return (
           <nav>
             <Link to="/" className="logo">
-              <Image fluid={data.image.childImageSharp.fluid} />
+              <GatsbyImage image={data.image.childImageSharp.gatsbyImageData} />
               <h1 className="wordmark">
                 Richard<span className="lastname">Dubay</span>
               </h1>
@@ -34,9 +34,7 @@ const logoQuery = graphql`
   query LogoQuery {
     image: file(absolutePath: { regex: "/logo_black.png/" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 50, height: 50, layout: FIXED)
       }
     }
   }

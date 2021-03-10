@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 // Component Imports
@@ -43,7 +43,7 @@ class AboutPage extends React.Component {
                   </p>
                   <div className="aboutImage">
                     <div className="aboutImageGrid">
-                      <Image fluid={data.avatar.childImageSharp.fluid} />
+                      <GatsbyImage image={data.avatar.childImageSharp.gatsbyImageData} />
                       <em>
                         My beautiful wife and I at the top of the Sky Needle in
                         Seattle.
@@ -183,14 +183,11 @@ class AboutPage extends React.Component {
 
 export default AboutPage;
 
-export const aboutPageQuery = graphql`
-  query AboutPage {
-    avatar: file(absolutePath: { regex: "/rich_heav.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const aboutPageQuery = graphql`query AboutPage {
+  avatar: file(absolutePath: {regex: "/rich_heav.jpg/"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+}
 `;

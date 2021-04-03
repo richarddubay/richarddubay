@@ -12,6 +12,7 @@ html {
 a {
   text-decoration: none;
   color: #ee6c4d;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {

@@ -49,7 +49,9 @@ a:hover {
 .siteHeader nav ul li a {
   margin: 0 10px;
   box-shadow: none;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-family: 'Roboto Condensed', serif;
+  text-transform: uppercase;
 }
 
 .siteHeader nav a.logo {
@@ -72,7 +74,6 @@ a:hover {
 .siteHeader .wordmark {
   font-family: 'Roboto Condensed';
   font-weight: 400;
-  font-style: italic;
   font-size: 1.75rem;
   text-transform: uppercase;
   padding-left: 1rem;

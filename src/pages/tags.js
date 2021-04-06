@@ -4,14 +4,14 @@ import kebabCase from 'lodash/kebabCase';
 
 // Component Imports
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Meta from '../components/meta';
 
 class TagListPage extends React.Component {
   render() {
     const group = this.props.data.allMarkdownRemark.group;
     return (
       <Layout>
-        <SEO
+        <Meta
           title="Tags"
           keywords={['blog', 'gatsby', 'javascript', 'react']}
         />

@@ -1,19 +1,20 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // Component Imports
-import SEO from '../components/seo';
+import Meta from '../components/meta';
 
 class NotFoundPage extends React.Component {
   render() {
     return (
       <div className="four-o-four">
-        <SEO title="404" />
+        <Meta title="404" />
         <GatsbyImage
           image={this.props.data.background.childImageSharp.gatsbyImageData}
           className="image"
-          style={{ position: `fixed` }} />
+          style={{ position: `fixed` }}
+        />
         <div className="text">
           <h1>404</h1>
           <p>The page you're looking for could not be found.</p>
@@ -40,11 +41,12 @@ class NotFoundPage extends React.Component {
 
 export default NotFoundPage;
 
-export const notFoundPageQuery = graphql`query NotFoundPage {
-  background: file(absolutePath: {regex: "/404.jpg/"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
+export const notFoundPageQuery = graphql`
+  query NotFoundPage {
+    background: file(absolutePath: { regex: "/404.jpg/" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
   }
-}
 `;

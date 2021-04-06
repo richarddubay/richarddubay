@@ -4,7 +4,7 @@ import moment from 'moment';
 
 // Component Imports
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Meta from '../components/meta';
 
 class Archives extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class Archives extends React.Component {
 
     return (
       <Layout>
-        <SEO
+        <Meta
           title="Archives"
           keywords={['blog', 'gatsby', 'javascript', 'react']}
         />

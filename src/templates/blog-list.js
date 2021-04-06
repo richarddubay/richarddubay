@@ -5,7 +5,7 @@ import moment from 'moment';
 
 // Component Imports
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Meta from '../components/meta';
 
 class BlogListTemplate extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class BlogListTemplate extends React.Component {
 
     return (
       <Layout>
-        <SEO
+        <Meta
           title="Home"
           keywords={['blog', 'gatsby', 'javascript', 'react']}
         />

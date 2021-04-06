@@ -4,7 +4,7 @@ import moment from 'moment';
 
 // Component Imports
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Meta from '../components/meta';
 
 class TagTemplate extends React.Component {
   render() {
@@ -16,7 +16,10 @@ class TagTemplate extends React.Component {
 
     return (
       <Layout>
-        <SEO title={tag} keywords={['blog', 'gatsby', 'javascript', 'react']} />
+        <Meta
+          title={tag}
+          keywords={['blog', 'gatsby', 'javascript', 'react']}
+        />
         <section className="tags">
           <div className="tagContent">
             <h1>{tagHeader}</h1>

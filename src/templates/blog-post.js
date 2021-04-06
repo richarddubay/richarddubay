@@ -5,7 +5,7 @@ import moment from 'moment';
 
 // Component Imports
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Meta from '../components/meta';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -41,7 +41,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout>
-        <SEO
+        <Meta
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />

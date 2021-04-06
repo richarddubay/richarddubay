@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 // Component Imports
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Meta from '../components/meta';
 
 class AboutPage extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class AboutPage extends React.Component {
         render={(data) => {
           return (
             <Layout>
-              <SEO title="About" />
+              <Meta title="About" />
               <section className="about">
                 <div className="aboutContent">
                   <h1>Welcome</h1>
@@ -43,7 +43,9 @@ class AboutPage extends React.Component {
                   </p>
                   <div className="aboutImage">
                     <div className="aboutImageGrid">
-                      <GatsbyImage image={data.avatar.childImageSharp.gatsbyImageData} />
+                      <GatsbyImage
+                        image={data.avatar.childImageSharp.gatsbyImageData}
+                      />
                       <em>
                         My beautiful wife and I at the top of the Sky Needle in
                         Seattle.
@@ -183,11 +185,12 @@ class AboutPage extends React.Component {
 
 export default AboutPage;
 
-export const aboutPageQuery = graphql`query AboutPage {
-  avatar: file(absolutePath: {regex: "/rich_heav.jpg/"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
+export const aboutPageQuery = graphql`
+  query AboutPage {
+    avatar: file(absolutePath: { regex: "/rich_heav.jpg/" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
   }
-}
 `;

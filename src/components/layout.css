@@ -17,8 +17,8 @@ a {
 
 a:hover {
   text-decoration: none;
-  border-bottom: 1px solid #3d5a80;
-  color: #3d5a80;
+  border-bottom: 1px solid #ec5732;
+  color: #ec5732;
 }
 
 .layout {
@@ -53,6 +53,19 @@ a:hover {
   font-size: 1.25rem;
   font-family: 'Roboto Condensed', serif;
   text-transform: uppercase;
+}
+
+.siteHeader nav ul li a.featured {
+  background-color: #ee6c4d;
+  color: #ffffff;
+  padding: 16px 30px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+
+.siteHeader nav ul li a.featured:hover {
+  border: none;
+  background-color: #ec5732;
 }
 
 .siteHeader nav a.logo {
@@ -525,6 +538,9 @@ img {
 @media (max-width: 500px) {
   .siteHeader nav ul li a {
     font-size: 0.9rem;
+  }
+  .siteHeader nav ul li a.featured {
+    padding: 12px 15px;
   }
   .siteHeader .wordmark {
     padding-left: 0.5rem;

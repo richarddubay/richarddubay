@@ -9,7 +9,7 @@
     "url": "https://github.com/richarddubay/richarddubay/issues"
   },
   "dependencies": {
-    "gatsby": "^3.0.4",
+    "gatsby": "^3.14.0",
     "gatsby-image": "^3.0.0",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-google-analytics": "^3.0.0",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 
 // Component Imports
 import Meta from '../components/meta';
@@ -10,10 +10,10 @@ class NotFoundPage extends React.Component {
     return (
       <div className="four-o-four">
         <Meta title="404" />
-        <GatsbyImage
-          image={this.props.data.background.childImageSharp.gatsbyImageData}
-          className="image"
-          style={{ position: `fixed` }}
+        <StaticImage
+          src="../../content/assets/404.jpg"
+          alt="404"
+          style={{ position: 'fixed' }}
         />
         <div className="text">
           <h1>404</h1>

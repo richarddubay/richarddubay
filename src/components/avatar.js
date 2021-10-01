@@ -1,29 +1,12 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from 'gatsby-plugin-image';
 
 function Avatar() {
   return (
-    <StaticQuery
-      query={avatarQuery}
-      render={(data) => {
-        return (
-          <div>
-            <GatsbyImage image={data.avatar.childImageSharp.gatsbyImageData} />
-          </div>
-        );
-      }}
-    />
+    <div>
+      <StaticImage src="../../content/assets/rich_heav.jpg" alt="Rich Heav" />
+    </div>
   );
 }
-
-const avatarQuery = graphql`query AvatarQuery {
-  avatar: file(absolutePath: {regex: "/rich_heav.jpg/"}) {
-    childImageSharp {
-      gatsbyImageData(width: 50, height: 50, layout: FIXED)
-    }
-  }
-}
-`;
 
 export default Avatar;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 // Component Imports
 import Layout from '../components/layout';
@@ -25,14 +25,12 @@ class BlogListTemplate extends React.Component {
         />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
-          const year = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+          const year = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format(
             'YYYY'
           );
-          const month = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
-            'MM'
-          );
-          const day = moment(node.frontmatter.date, 'YYYY-MM-DD').format('DD');
-          const footerDate = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+          const month = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format('MM');
+          const day = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format('DD');
+          const footerDate = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format(
             'MMMM DD, YYYY'
           );
           const tags = node.frontmatter.tags;

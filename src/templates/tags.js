@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 // Component Imports
 import Layout from '../components/layout';
@@ -26,13 +26,13 @@ class TagTemplate extends React.Component {
             {edges.map(({ node }) => {
               const { slug } = node.fields;
               const { title } = node.frontmatter;
-              const year = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              const year = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format(
                 'YYYY'
               );
-              const month = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              const month = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format(
                 'MM'
               );
-              const day = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              const day = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format(
                 'DD'
               );
               return (

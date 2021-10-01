@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 // Component Imports
 import Layout from '../components/layout';
@@ -21,13 +21,13 @@ class Archives extends React.Component {
             <h1>Archives</h1>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug;
-              const year = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              const year = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format(
                 'YYYY'
               );
-              const month = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              const month = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format(
                 'MM'
               );
-              const day = moment(node.frontmatter.date, 'YYYY-MM-DD').format(
+              const day = dayjs(node.frontmatter.date, 'YYYY-MM-DD').format(
                 'DD'
               );
               return (

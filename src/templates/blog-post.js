@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 // Component Imports
 import Layout from '../components/layout';
@@ -12,22 +12,22 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     const { previous, next } = this.props.pageContext;
     const previousYear = previous
-      ? moment(previous.frontmatter.date, 'YYYY-MM-DD').format('YYYY')
+      ? dayjs(previous.frontmatter.date, 'YYYY-MM-DD').format('YYYY')
       : null;
     const previousMonth = previous
-      ? moment(previous.frontmatter.date, 'YYYY-MM-DD').format('MM')
+      ? dayjs(previous.frontmatter.date, 'YYYY-MM-DD').format('MM')
       : null;
     const previousDay = previous
-      ? moment(previous.frontmatter.date, 'YYYY-MM-DD').format('DD')
+      ? dayjs(previous.frontmatter.date, 'YYYY-MM-DD').format('DD')
       : null;
     const nextYear = next
-      ? moment(next.frontmatter.date, 'YYYY-MM-DD').format('YYYY')
+      ? dayjs(next.frontmatter.date, 'YYYY-MM-DD').format('YYYY')
       : null;
     const nextMonth = next
-      ? moment(next.frontmatter.date, 'YYYY-MM-DD').format('MM')
+      ? dayjs(next.frontmatter.date, 'YYYY-MM-DD').format('MM')
       : null;
     const nextDay = next
-      ? moment(next.frontmatter.date, 'YYYY-MM-DD').format('DD')
+      ? dayjs(next.frontmatter.date, 'YYYY-MM-DD').format('DD')
       : null;
     const tags = post.frontmatter.tags;
     const tagList = tags.map((tag, index) => {

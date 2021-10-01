@@ -9,6 +9,7 @@
     "url": "https://github.com/richarddubay/richarddubay/issues"
   },
   "dependencies": {
+    "dayjs": "^1.10.7",
     "gatsby": "^3.14.0",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-google-analytics": "^3.0.0",
@@ -26,7 +27,6 @@
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^3.0.0",
     "gatsby-transformer-sharp": "^3.0.0",
-    "moment": "^2.24.0",
     "prismjs": "^1.25.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

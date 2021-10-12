@@ -123,12 +123,21 @@ a:hover {
   margin-top: 1.5rem;
 }
 
+.main h1,
+.main h2,
+.main h3,
+.main h4,
+.main h5,
+.main h6 {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+}
+
 .main h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
   width: 100%;
   display: block;
-  font-weight: 700;
 }
 
 .main h1 a {
@@ -143,13 +152,11 @@ a:hover {
 
 .main h2 {
   font-size: 2rem;
-  font-weight: bold;
   padding-top: 1rem;
 }
 
 .main h3 {
   font-size: 1.5rem;
-  font-weight: bold;
   padding-top: 1rem;
 }
 

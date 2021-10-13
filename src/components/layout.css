@@ -3,8 +3,8 @@ html {
   padding: 0;
   margin: 0;
   display: grid;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   color: #293241;
   overflow-x: hidden;
 }
@@ -128,7 +128,7 @@ a:hover {
 .main h4,
 .main h5,
 .main h6 {
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Slab';
   font-weight: 400;
 }
 

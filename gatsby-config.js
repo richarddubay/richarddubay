@@ -123,7 +123,7 @@ module.exports = {
         short_name: 'Rich Dubay',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#663399',
+        theme_color: '#FFFFFF',
         display: 'standalone',
         icon: 'content/assets/gray-icon.png', // This path is relative to the root of the site.
       },

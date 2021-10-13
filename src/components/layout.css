@@ -135,6 +135,7 @@ a:hover {
 .main h1 {
   font-family: 'Roboto Slab';
   font-size: 3rem;
+  font-weight: 300;
   margin-bottom: 0.5rem;
   width: 100%;
   display: block;

@@ -24,7 +24,7 @@ A couple years ago (2020), my theme was “health”. I knew this was the theme 
 
 The results were great. I lost like 20 pounds and I fully believe it was that better health that got me through my first bout with COVID in November. I’ve since gone backward on a lot of the gains and improvements that I made during that year. No excuses. I know I need to do better.
 
-Then this past year (2021) I thought the theme I had heard was “work”. This one was a lot harder for me to actually hear God’s voice on and figure out. I think mostly because I wasn’t really listening well. I think being quiet and listening to God was one of those places that I just really struggled with at the end of 2020. I’d did add on some additional work in the form of freelancing and I spent more time than I have in the past working around the house and things of that nature. But I don’t think I ever really embraced the “work” theme.
+Then this past year (2021) I thought the theme I had heard was “work”. This one was a lot harder for me to actually hear God’s voice on and figure out. I think mostly because I wasn’t really listening well. I think being quiet and listening to God was one of those places that I just really struggled with at the end of 2020. I did add on some additional work in the form of freelancing and I spent more time than I have in the past working around the house and things of that nature. But I don’t think I ever really embraced the “work” theme.
 
 So as I got to the end of 2021 and started to ask what my theme for 2022 would be, I really thought what I would hear would be some combination of “health” and “work”. After all, I had let my health go and I never really took on the mantel of work. That’s what I was expecting.
 
